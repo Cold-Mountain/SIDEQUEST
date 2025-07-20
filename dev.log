@@ -1,0 +1,15 @@
+
+> sidequest@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.7.228:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 739ms
+ ○ Compiling /api/generate-quest ...
+ ✓ Compiled /api/generate-quest in 1731ms
+ POST /api/generate-quest 200 in 2471ms
+[?25h

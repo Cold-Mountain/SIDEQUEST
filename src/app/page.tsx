@@ -1,103 +1,132 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import { QuestSelector } from "@/components/features";
+import { GeneratedQuest, QuestGenerationResponse } from "@/types/database";
+
+interface QuestOptions {
+  timeframe: string;
+  difficulty: string;
+  transportation: string;
+  theme: string;
+  location?: {
+    latitude: number;
+    longitude: number;
+    city: string;
+  };
+}
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [generatedQuests, setGeneratedQuests] = useState<GeneratedQuest[]>([]);
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [questSelectorKey, setQuestSelectorKey] = useState(0);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const handleGenerateQuest = async (options: QuestOptions) => {
+    setIsGenerating(true);
+    setError(null);
+    
+    try {
+      console.log("Generating quest with options:", options);
+      
+      // UI values now match API format directly
+      const apiOptions = options;
+      
+      console.log("Translated options for API:", apiOptions);
+      
+      const response = await fetch('/api/generate-quest', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(apiOptions),
+      });
+
+      const result: QuestGenerationResponse = await response.json();
+      
+      if (result.success) {
+        setGeneratedQuests(result.quests);
+        console.log("Generated quests:", result.quests);
+      } else {
+        setError(result.error || 'Failed to generate quests');
+      }
+    } catch (err) {
+      console.error("Quest generation error:", err);
+      setError('Network error occurred while generating quests');
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  return (
+    <div>
+      <QuestSelector 
+        key={questSelectorKey}
+        onGenerateQuest={handleGenerateQuest}
+        isGenerating={isGenerating}
+      />
+      
+      {error && (
+        <div className="max-w-2xl mx-auto mt-8 p-4 bg-red-100 border border-red-300 rounded-lg">
+          <p className="text-red-700 font-medium">Error: {error}</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      )}
+      
+      {generatedQuests.length > 0 && (
+        <div className="max-w-4xl mx-auto mt-8 px-4">
+          <h2 className="text-2xl font-bold text-center mb-6 text-[var(--color-text-primary)]">
+            Your Quest Options
+          </h2>
+          
+          <div className="space-y-4">
+            {generatedQuests.map((quest, index) => (
+              <div 
+                key={quest.id}
+                className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6"
+              >
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-lg font-semibold text-[var(--color-text-primary)]">
+                    Quest Option {index + 1}
+                  </h3>
+                  <div className="text-sm text-[var(--color-text-muted)] text-right">
+                    <div>Time: {quest.totalTime} minutes</div>
+                    <div>Difficulty: {quest.difficulty}</div>
+                  </div>
+                </div>
+                
+                <p className="text-[var(--color-text-primary)] text-lg leading-relaxed">
+                  {quest.description}
+                </p>
+                
+                {quest.tags.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {quest.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex}
+                        className="px-2 py-1 bg-[var(--color-secondary)] text-white text-xs rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <button
+              onClick={() => {
+                setGeneratedQuests([]);
+                setQuestSelectorKey(prev => prev + 1);
+              }}
+              className="px-6 py-3 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-dark)] text-white font-medium rounded-lg transition-colors"
+            >
+              Generate New Quests
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
