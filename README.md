@@ -1,270 +1,133 @@
-Sidequest App - Complete Project Documentation
+# 🗺️ Sidequest App  
+**Complete Project Documentation**
 
+Sidequest is an adventure-generating app that crafts meaningful, real-world quests based on user preferences, external data, and curated content blocks. It’s a tool for spontaneity, exploration, and transformation.
 
-User Input Phase
-Users select:
-Timeframe Options:
-"Quick Adventure" (under an hour)
-"Afternoon Quest" (a few hours)
-"Day Journey" (full day commitment)
-"Epic Saga" (multi-day adventure)
-Difficulty: Easy, Medium, Hard
-Transportation Available:
-Has car - access to vehicle
-No car - relies on public transport/walking
-Theme/Mode (optional):
-Journey - focus on travel
-Life-changing - long-term commitments and changes
-The Playbook - romantic actions and settings
-Virtuous - helping others/volunteering
+---
 
-Quest Generation System
-The app generates quests using:
-Database of "blocks" (seeds) that serve as quest building blocks
-User inputs (timeframe, difficulty, transportation, theme)
-Location data from IP address/user input/Google Maps API
-External APIs for real-time data:
-Atlas Obscura (unique locations)
-Google Places/Maps/Explore APIs
-Weather APIs (OpenWeather)
-Spotify API (music challenges)
-Airbnb Experiences
-Transportation APIs (Amtrak, Greyhound, Megabus)
-Local travel blogs via RSS
-AI Integration (Claude or Gemini) to combine elements into coherent quests
-Quest Block Types
-[physical] - Physical actions
-Do a flip
-Learn to skateboard
-Frolicking
-[obtain] - Acquire something
-Pistachio ice cream
-Sword from a list
-Thrifted clothes
-[create] - Make something
-Origami crane
-Slam poem
-Album inspired by random song
-[location] - Visit specific place
-Top of parking garage
-Sunrise/sunset viewing spot
-Atlas Obscura location
-[learn] - Acquire new skill
-Solve Rubik's cube
-Art of rage-baiting
-New dance
-[perform] - Artistic performance
-Sing in public
-Slow dance
-Perform slam poem
-[costume] - Wear something specific
-Formal wear
-Unusual outfit
-Themed clothing
-Quest Interface
-Pre-Quest Screen:
-Safety disclaimer: "Be careful and don't be stupid"
-Quest description (AI-generated paragraph)
-Warning: "Timer cannot be paused. Good luck."
-{QUEST BUTTON}
-Active Quest Screen:
-Active Timer: Countdown showing time remaining
-Quest Description: Full quest details
-Action Buttons:
-[DIRECTIONS] - Opens maps/navigation
-[QUIT QUEST] - Abandon quest (point deduction)
-Note: No "complete" button - timer runs full duration
-Point System
-Quest Completion:
-Easy quest: 10 points
-Medium quest: 25 points
-Hard quest: 50 points
-AP Daily Quest?
-Time Bonuses:
-Complete with >50% time remaining: +10 points
-Complete with >75% time remaining: +20 points
-Theme Multipliers:
-Journey mode: 1.5x points
-Life-changing mode: 2x points
-The Playbook: 1.25x points
-Virtuous mode: 1.5x points
-Penalties:
-Quit quest: -5 points
-Time expired: 0 points (no penalty)
-Streak Bonuses: Consecutive completions multiply points
-Technical Architecture
-Frontend
-Framework: React (or Vue.js/Next.js)
-Components: Quest cards, timer, navigation, point display
-State Management: Active quests, user profile, points, streaks
-Design: Mobile-first responsive design
-Quest Generation Pipeline
-Pull relevant blocks from database based on inputs
-Query APIs for location/weather/event data
-Calculate time requirements:
-Travel time (from Google Maps API)
-Action time (from database)
-Total = (Travel + Action) + 10% buffer
-Send combined data to AI service
-AI returns formatted quest paragraph
-Cache for offline functionality
-AI Quest Generation Prompt
-SIDEQUEST GENERATION PROMPT
+## 🧭 User Input Phase
 
-You are the quest generator for Sidequest, an app that creates meaningful real-world adventures. Your task is to combine quest blocks into a single, cohesive experience that pushes people outside their comfort zones.
+Users select from the following options:
 
+### ⏱️ Timeframe
+- **Quick Adventure** – under an hour  
+- **Afternoon Quest** – a few hours  
+- **Day Journey** – full-day commitment  
+- **Epic Saga** – multi-day adventure  
 
-Offline Functionality
-Pre-generate template quests with fill-in-the-blanks
-Store in local storage for no-connection scenarios
-Sync completed quests when connection restored
-Database Structure (Google Sheets)
-Sheet 1: Quest Blocks
-Column
-Field Name
-Description
-A
-Block_ID
-Unique identifier (e.g., BLK_001)
-B
-Block_Type
-[physical], [obtain], [create], [location], [learn], [perform], [costume]
-C
-Action_Description
-Specific action to perform
-D
-Time_Required
-Minutes needed to complete
-E
-Difficulty_Tag
-easy, medium, hard
-F
-Location_Dependent
-YES/NO
-G
-Transportation_Required
-car_required, car_optional, no_car_needed
-H
-Weather_Modifier
-all_weather, no_rain, daylight_only, clear_skies
-I
-Theme_Tags
-romantic, life_changing, journey, virtuous, general
-J
-Cost_Estimate
-0, 5-10, 10-25, 25+
-K
-Indoor_Outdoor
-indoor, outdoor, both
-L
-Social_Level
-solo, optional_social, requires_others
-M
-Equipment_Needed
-none, smartphone, formal_wear, etc.
-N
-Time_of_Day
-anytime, business_hours, daylight, night_only
-O
-Physical_Intensity
-low, moderate, high
-P
-Combination_Priority
-high, medium, low
-Q
-Special_Notes
-Additional constraints
+### ⚔️ Difficulty
+- Easy  
+- Medium  
+- Hard  
 
-Sheet 2: Location Seeds
-Column
-Field Name
-Description
-A
-Location_ID
-Unique identifier
-B
-Location_Type
-parking_garage, park, museum, rooftop
-C
-Specific_Examples
-Real places to pull from APIs
-D
-Weather_Sensitivity
-high, medium, low
-E
-Public_Access
-always_open, business_hours, varies
-F
-Theme_Compatibility
-romantic, journey, life_changing, general
+### 🚗 Transportation
+- **Has car** – access to personal vehicle  
+- **No car** – walking/public transportation only  
 
-Sheet 3: Combination Rules
-Column
-Field Name
-Description
-A
-Rule_ID
-Unique identifier
-B
-Block_Type_1
-First block type
-C
-Block_Type_2
-Second block type
-D
-Synergy_Score
-How well they combine (1-10)
-E
-Example_Combination
-Sample quest idea
+### 🎭 Theme/Mode (optional)
+- **Journey** – focus on travel/exploration  
+- **Life-changing** – long-term impact quests  
+- **The Playbook** – romance-oriented  
+- **Virtuous** – volunteering and helping others  
 
-Sheet 4: User Submissions
-Column
-Field Name
-Description
-A
-Submission_Date
-When submitted
-B
-User_Email
-Contact (optional)
-C
-Block_Type
-Suggested category
-D
-Action_Idea
-Their suggestion
-E
-Why_Meaningful
-Their reasoning
-F
-Status
-pending, approved, rejected
-G
-Admin_Notes
-Review comments
+---
 
+## ⚙️ Quest Generation System
 
-Chunks (New)
+Quests are built using:
+- A database of **quest blocks** ("seeds")  
+- User inputs (time, difficulty, transport, theme)  
+- **Location data** (via IP, user input, or Google Maps API)  
+- **External APIs** for real-time data:
+  - Atlas Obscura (unique sites)  
+  - Google Places / Maps / Explore  
+  - OpenWeather API  
+  - Spotify API (music tasks)  
+  - Airbnb Experiences  
+  - Amtrak / Megabus / Greyhound APIs  
+  - RSS feeds from local travel blogs  
+- **AI Integration** (Claude, Gemini, etc.) to create coherent quest narratives
 
-In Journey mode specifically, we will implement what are called Chunks. Chunks are specific subsets of quests that are linked to a unique API/algorithm that generates a certain activity. For example, the first chunks on the website were the AtlasObscura API and the OpenStreetMap API; these chunks will be “obscure” and “hiking” respectively. More chunk ideas can include:
+---
 
-Birding
-Boat rental
-Canoeing
-Caving
-Camping
-Gold Panning
-Hiking/Trails/Trails Difficult
-Wild Horse Viewing
-Whitewater rafting…
+## 🎲 Quest Block Types
 
-Each of these chunks will pull from unique sources specific to them and allow for more variety in quests. Furthermore, these blocks/seeds can be tagged specifically for a certain chunk and that can personalize quests a lot more. These chunks can also be configured to only activate in certain conditions (can’t canoe in the winter/can’t pan for gold in Florida etc. sybau it’s an example). 
-Example Quests
-Easy Quest Example: "Visit the nearest botanical garden and create an origami flower. Leave it on a bench for the next visitor to discover—a small gift from one wanderer to another."
-Medium Quest Example: "Ascend to the highest parking garage in your area and perform a flip at its peak, marking your triumph. Then, in that same elevated space between earth and sky, fold an origami crane and release it to the wind."
-Hard Quest Example: "Don formal attire and travel to three different rooftops before sunset. At each peak, perform a different dance for exactly one song. Document not the dance, but the view that witnessed it."
-Romantic Mode Example: "Find a quiet corner in a bookstore or library. Write a love letter to a fictional character, fold it into a paper airplane, and hide it between the pages of their story."
+| Type        | Examples                                      |
+|-------------|-----------------------------------------------|
+| `[physical]` | Do a flip, learn to skateboard, frolicking    |
+| `[obtain]`   | Pistachio ice cream, thrifted sword            |
+| `[create]`   | Origami crane, slam poem, found-sound album   |
+| `[location]` | Rooftop, sunset spot, Atlas Obscura site      |
+| `[learn]`    | Solve a Rubik’s cube, new dance, rage-baiting |
+| `[perform]`  | Sing in public, slow dance, poetry reading    |
+| `[costume]`  | Formal wear, themed outfit, something odd     |
+
+---
+
+## 🧪 Quest Interface
+
+### 🛡️ Pre-Quest Screen
+- ⚠️ Safety disclaimer: *"Be careful and don't be stupid."*  
+- Quest description (AI-generated)  
+- Warning: *"Timer cannot be paused. Good luck."*  
+- `{QUEST BUTTON}` to begin
+
+### ⏳ Active Quest Screen
+- Live countdown timer  
+- Quest details  
+- Action buttons:  
+  - `[DIRECTIONS]` → Navigation  
+  - `[QUIT QUEST]` → Forfeit (point penalty)  
+
+**Note:** No “complete” button — quests run full duration
+
+---
+
+## 🏆 Point System
+
+### 📈 Completion Points
+- Easy: **10 pts**  
+- Medium: **25 pts**  
+- Hard: **50 pts**  
+- Daily Quest Bonus (optional)
+
+### ⏱️ Time Bonuses
+- >50% time remaining: +10 pts  
+- >75% time remaining: +20 pts  
+
+### 🎭 Theme Multipliers
+- Journey: 1.5×  
+- Life-changing: 2×  
+- The Playbook: 1.25×  
+- Virtuous: 1.5×  
+
+### ❌ Penalties
+- Quit: -5 pts  
+- Timeout: 0 pts (no extra penalty)  
+
+### 🔁 Streaks
+- Consecutive completions increase multipliers
+
+---
+
+## 🏗️ Technical Architecture
+
+### Frontend
+- Framework: React / Vue / Next.js  
+- Components: Quest cards, timer, nav, point UI  
+- State: Quest state, user profile, points, streak  
+- Design: Mobile-first, responsive  
+
+### Quest Generation Pipeline
+1. Pull matching blocks from DB  
+2. Query external APIs (location, weather, events)  
+3. Calculate quest time:
+   - Travel time (Google Maps API)  
+   - Action time (from DB) + 10% buffer  
+4. Generate narrative using AI  
+5. Cache quest data for offline use  
+
+---
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
