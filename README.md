@@ -1,12 +1,6 @@
 Sidequest App - Complete Project Documentation
-Overview
-App Name: Sidequest
-Purpose: Create an app focused on real, meaningful experiences rather than the glorification of small moments. A "sidequest" is an opportunity to engage in experiences one usually wouldn't do and share with other people.
-Design Philosophy:
-Tone: Minimalistic, mystical, and warm
-Mission: Combat social media superficiality by creating authentic, memorable experiences
-Approach: Push people outside comfort zones in playful, creative ways
-Core Functionality
+
+
 User Input Phase
 Users select:
 Timeframe Options:
