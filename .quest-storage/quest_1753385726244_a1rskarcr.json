@@ -1,0 +1,33 @@
+{
+  "id": "quest_1753385726244_a1rskarcr",
+  "title": "A whisper carried on the salt",
+  "description": "A whisper carried on the salt wind speaks of the 'Historic Lighthouse'. It is more than just a beacon; it is a repository of forgotten truths, echoing with tales of the deep. Your task is to explore Historic Lighthouse fully. Seek out its secrets, for only by venturing into its depths will the next path reveal itself.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T19:35:26.244Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.4522,
+      "longitude": -81.4678,
+      "city": "Orlando",
+      "state": "Florida",
+      "country": "US",
+      "zip": "32819",
+      "accuracy": 50000
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-lighthouse-51484a96b3b76254c0596a8427ad095d3c40f00102f90173f66c3800000000",
+    "title": "Historic Lighthouse",
+    "description": "A historic lighthouse standing as a beacon of maritime heritage with stunning coastal views.",
+    "lat": 28.363428900000002,
+    "lng": -81.54246225048803,
+    "location": "Cayman Way, Bay Lake, FL 32830, United States of America",
+    "type": "trail"
+  }
+}

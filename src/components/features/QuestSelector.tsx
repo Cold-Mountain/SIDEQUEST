@@ -85,7 +85,6 @@ export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating
   const handleQuestConfirmed = async () => {
     setShowQuestConfirmation(false);
     setQuestStarted(true);
-    setIsOpen(false);
     
     // Generate quest - safety disclaimer will show automatically when ready
     await onGenerateQuest(options);
