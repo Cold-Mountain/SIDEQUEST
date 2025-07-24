@@ -24,7 +24,7 @@ export class GoogleOffRoadingChunk extends BaseChunk {
     super(
       'Off-Roading Explorer',
       'google_off_roading',
-      1, // Equal weight with other chunks
+      3, // Medium-high weight - exciting outdoor adventure activity
       {
         weather: 'any',
         timeOfDay: 'any',

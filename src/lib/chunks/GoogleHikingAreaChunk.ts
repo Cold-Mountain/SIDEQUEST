@@ -32,7 +32,7 @@ export class GoogleHikingAreaChunk extends BaseChunk {
     super(
       'Google Hiking Area Explorer',
       'google_hiking_area',
-      1, // Equal weight with other chunks
+      2, // Medium weight - outdoor activity but common
       {
         weather: 'any',
         timeOfDay: 'any',

@@ -33,7 +33,7 @@ export class LighthouseChunk extends BaseChunk {
     super(
       'Lighthouse Explorer',
       'lighthouse',
-      1, // Equal weight with other chunks
+      3, // Medium-high weight - scenic coastal landmarks with history
       {
         weather: 'any', // Lighthouses work in all weather
         timeOfDay: 'any',

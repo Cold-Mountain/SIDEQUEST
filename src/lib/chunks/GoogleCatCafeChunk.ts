@@ -24,7 +24,7 @@ export class GoogleCatCafeChunk extends BaseChunk {
     super(
       'Cat Cafe Explorer',
       'google_cat_cafe',
-      1, // Re-enabled for wildcard mode
+      4, // High weight - unique social experience with cats
       {
         weather: 'any',
         timeOfDay: 'any',

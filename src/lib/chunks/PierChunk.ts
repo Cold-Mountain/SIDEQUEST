@@ -33,7 +33,7 @@ export class PierChunk extends BaseChunk {
     super(
       'Pier Explorer',
       'pier',
-      1, // Equal weight with other chunks
+      1, // Lower weight - basic coastal structure, less unique
       {
         weather: 'any', // Piers work in most weather
         timeOfDay: 'any',

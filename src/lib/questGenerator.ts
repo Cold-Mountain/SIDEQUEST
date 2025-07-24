@@ -1,6 +1,7 @@
 import { QuestBlock, QuestInput, GeneratedQuest, QuestGenerationResponse, AtlasObscuraLocation, TrailLocation } from '@/types/database';
 import { database } from './googleSheets';
 import { chunkManager, initializeChunks, ChunkLocation } from './chunks';
+import { CoolnessCalculator } from './chunks/CoolnessCalculator';
 
 // Difficulty mapping for calculations
 const DIFFICULTY_VALUES = {
@@ -370,12 +371,16 @@ export class QuestGenerator {
       };
     }
 
-    // Generate 3 pure chunk-based quests
+    // Generate and filter quests by coolness
     const questOptions: GeneratedQuest[] = [];
-    const maxAttempts = Math.min(6, chunkLocations.length);
+    const maxAttempts = Math.min(10, chunkLocations.length * 2); // More attempts for better quality
+    
+    console.log('🎯 Generating adventure quests with coolness filtering...');
     
     for (let i = 0; i < maxAttempts && questOptions.length < 3; i++) {
-      const chunkLocation = chunkLocations[i];
+      // Use modulo to cycle through available locations
+      const locationIndex = i % chunkLocations.length;
+      const chunkLocation = chunkLocations[locationIndex];
       
       console.log(`Creating adventure quest for: ${chunkLocation.title}`);
       
@@ -386,13 +391,37 @@ export class QuestGenerator {
       );
       
       if (quest) {
-        questOptions.push(quest);
+        // Calculate coolness score
+        const coolnessScore = CoolnessCalculator.calculateQuestCoolness(quest);
+        const coolnessCategory = CoolnessCalculator.getCoolnessCategory(coolnessScore);
+        
+        console.log(`⭐ Quest coolness: ${coolnessScore}/5 (${coolnessCategory}) - ${quest.description}`);
+        
+        // Apply coolness filtering - prefer quests with score >= 2.5
+        const meetsMinimum = CoolnessCalculator.meetsMinimumCoolness(quest, 2.0); // Slightly lower threshold for adventure mode
+        
+        if (meetsMinimum || questOptions.length < 1) { // Always accept first quest as fallback
+          questOptions.push(quest);
+          console.log(`✅ Quest accepted (coolness: ${coolnessScore})`);
+        } else {
+          console.log(`❌ Quest rejected (coolness: ${coolnessScore} below threshold)`);
+        }
       }
     }
 
+    // Sort quests by coolness score (highest first)
+    const sortedQuests = CoolnessCalculator.sortQuestsByCoolness(questOptions) as GeneratedQuest[];
+    
+    console.log('📊 Final quest coolness rankings:');
+    sortedQuests.forEach((quest, index) => {
+      const score = CoolnessCalculator.calculateQuestCoolness(quest);
+      const category = CoolnessCalculator.getCoolnessCategory(score);
+      console.log(`  ${index + 1}. ${quest.description.slice(0, 50)}... - ${score}/5 (${category})`);
+    });
+
     return {
       success: true,
-      quests: questOptions,
+      quests: sortedQuests,
       filteredBlocksCount: chunkLocations.length
     };
   }
@@ -454,9 +483,11 @@ export class QuestGenerator {
       }
     }
 
-    // Generate 3 quest options for variety
+    // Generate quest options with coolness filtering
     const questOptions: GeneratedQuest[] = [];
-    const maxAttempts = 6;
+    const maxAttempts = 8; // More attempts for better quality
+    
+    console.log('🎲 Generating wildcard quests with coolness filtering...');
     
     for (let i = 0; i < maxAttempts && questOptions.length < 3; i++) {
       let atlasLocation: AtlasObscuraLocation | undefined;
@@ -506,15 +537,39 @@ export class QuestGenerator {
       );
       
       if (quest) {
-        questOptions.push(quest);
+        // Calculate coolness score
+        const coolnessScore = CoolnessCalculator.calculateQuestCoolness(quest);
+        const coolnessCategory = CoolnessCalculator.getCoolnessCategory(coolnessScore);
+        
+        console.log(`⭐ Wildcard quest coolness: ${coolnessScore}/5 (${coolnessCategory}) - ${quest.description}`);
+        
+        // Apply coolness filtering - slightly higher threshold for wildcard
+        const meetsMinimum = CoolnessCalculator.meetsMinimumCoolness(quest, 2.2);
+        
+        if (meetsMinimum || questOptions.length < 1) { // Always accept first quest as fallback
+          questOptions.push(quest);
+          console.log(`✅ Wildcard quest accepted (coolness: ${coolnessScore})`);
+        } else {
+          console.log(`❌ Wildcard quest rejected (coolness: ${coolnessScore} below threshold)`);
+        }
       }
     }
 
+    // Sort quests by coolness score (highest first)
+    const sortedQuests = CoolnessCalculator.sortQuestsByCoolness(questOptions) as GeneratedQuest[];
+    
+    console.log('🎲 Final wildcard quest coolness rankings:');
+    sortedQuests.forEach((quest, index) => {
+      const score = CoolnessCalculator.calculateQuestCoolness(quest);
+      const category = CoolnessCalculator.getCoolnessCategory(score);
+      console.log(`  ${index + 1}. ${quest.description.slice(0, 50)}... - ${score}/5 (${category})`);
+    });
+
     return {
-      success: questOptions.length > 0,
-      quests: questOptions,
+      success: sortedQuests.length > 0,
+      quests: sortedQuests,
       filteredBlocksCount: filteredBlocks.length,
-      error: questOptions.length === 0 ? 'Failed to generate any wildcard quests after multiple attempts' : undefined
+      error: sortedQuests.length === 0 ? 'Failed to generate any wildcard quests after multiple attempts' : undefined
     };
   }
 

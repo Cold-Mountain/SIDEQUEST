@@ -24,7 +24,7 @@ export class GoogleMarinaChunk extends BaseChunk {
     super(
       'Marina Explorer',
       'google_marina',
-      1, // Re-enabled for wildcard mode
+      2, // Medium weight - nautical atmosphere but fairly common
       {
         weather: 'any',
         timeOfDay: 'any',

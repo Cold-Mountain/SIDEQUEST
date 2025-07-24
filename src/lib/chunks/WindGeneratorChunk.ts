@@ -33,7 +33,7 @@ export class WindGeneratorChunk extends BaseChunk {
     super(
       'Wind Farm Explorer',
       'wind_generator',
-      1, // Equal weight with other chunks
+      4, // High weight - visually impressive and unique renewable energy experience
       {
         weather: 'any', // Wind generators work in all weather
         timeOfDay: 'any',

@@ -24,7 +24,7 @@ export class GoogleBeachChunk extends BaseChunk {
     super(
       'Google Beach Explorer',
       'google_beach',
-1, // Equal weight with other chunks
+      2, // Medium weight - popular but common coastal experience
       {
         weather: 'any',
         timeOfDay: 'any',

@@ -33,7 +33,7 @@ export class NationalParkChunk extends BaseChunk {
     super(
       'National Park Explorer',
       'national_park',
-      1, // Equal weight with other chunks
+      1, // Lower weight - common and predictable outdoor experience
       {
         weather: 'any', // Parks work in most weather
         timeOfDay: 'any',

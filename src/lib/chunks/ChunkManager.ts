@@ -69,7 +69,7 @@ export class ChunkManager {
   }
 
   /**
-   * Randomly select a chunk based on weights and availability
+   * Randomly select a chunk based on weights and availability with coolness preference
    */
   public selectRandomChunk(
     params: ChunkSearchParams,
@@ -88,30 +88,35 @@ export class ChunkManager {
       return null;
     }
 
-    // Calculate total weight
-    const totalWeight = availableChunks.reduce((sum, chunk) => sum + chunk.weight, 0);
+    // Sort chunks by weight (descending) for logging
+    const sortedChunks = [...availableChunks].sort((a, b) => b.weight - a.weight);
+    console.log('Available chunks by weight:', sortedChunks.map(c => `${c.name}(${c.weight})`).join(', '));
+
+    // Calculate total weight with squared weighting to favor higher-weight chunks more
+    const totalWeight = availableChunks.reduce((sum, chunk) => sum + (chunk.weight * chunk.weight), 0);
     
-    // Random selection based on weights
+    // Random selection based on squared weights
     let random = Math.random() * totalWeight;
     
     for (const chunk of availableChunks) {
-      random -= chunk.weight;
+      const squaredWeight = chunk.weight * chunk.weight;
+      random -= squaredWeight;
       if (random <= 0) {
         this.lastUsedChunk = chunk.type;
-        console.log(`Selected chunk: ${chunk.name} (${chunk.type})`);
+        console.log(`✨ Selected chunk: ${chunk.name} (${chunk.type}, weight: ${chunk.weight})`);
         return chunk;
       }
     }
 
-    // Fallback to first available chunk
-    const selectedChunk = availableChunks[0];
-    this.lastUsedChunk = selectedChunk.type;
-    console.log(`Fallback selected chunk: ${selectedChunk.name} (${selectedChunk.type})`);
-    return selectedChunk;
+    // Fallback to highest-weighted chunk available
+    const highestWeightChunk = sortedChunks[0];
+    this.lastUsedChunk = highestWeightChunk.type;
+    console.log(`📍 Fallback to highest weight chunk: ${highestWeightChunk.name} (${highestWeightChunk.type}, weight: ${highestWeightChunk.weight})`);
+    return highestWeightChunk;
   }
 
   /**
-   * Get multiple random locations from different chunks
+   * Get multiple random locations from different chunks with coolness weighting
    */
   public async getRandomLocations(
     params: ChunkSearchParams,
@@ -132,15 +137,42 @@ export class ChunkManager {
       return [];
     }
 
-    // Try to get locations from different chunks
+    // Get chunk selections with coolness preference and some variety
     const chunkSelections: BaseChunk[] = [];
+    const usedChunkTypes = new Set<string>();
     
     for (let i = 0; i < count; i++) {
-      const selectedChunk = this.selectRandomChunk(params, currentConditions);
+      // For first few selections, prioritize coolness
+      // For later selections, allow some variety to prevent repetition
+      const allowRepeat = i >= Math.ceil(count * 0.7); // Allow repeats after 70% of selections
+      
+      let selectedChunk: BaseChunk | null = null;
+      let attempts = 0;
+      const maxAttempts = 10;
+      
+      while (!selectedChunk && attempts < maxAttempts) {
+        const candidate = this.selectRandomChunk(params, currentConditions);
+        
+        if (candidate && (allowRepeat || !usedChunkTypes.has(candidate.type))) {
+          selectedChunk = candidate;
+          usedChunkTypes.add(candidate.type);
+        }
+        attempts++;
+      }
+      
+      // If we couldn't find a unique chunk, take any available high-weight chunk
+      if (!selectedChunk && availableChunks.length > 0) {
+        const sortedByWeight = [...availableChunks].sort((a, b) => b.weight - a.weight);
+        selectedChunk = sortedByWeight[0];
+        console.log(`🔄 Using fallback high-weight chunk: ${selectedChunk.name}`);
+      }
+      
       if (selectedChunk) {
         chunkSelections.push(selectedChunk);
       }
     }
+
+    console.log(`🎯 Selected chunks for quest generation:`, chunkSelections.map(c => `${c.name}(${c.weight})`).join(', '));
 
     // Get locations from selected chunks with timeout
     for (const chunk of chunkSelections) {

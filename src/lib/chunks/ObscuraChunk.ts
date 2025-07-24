@@ -7,7 +7,7 @@ export class ObscuraChunk extends BaseChunk {
     super(
       'Atlas Obscura Explorer',
       'obscura',
-1, // Equal weight with other chunks
+      5, // Highest weight - most unique and interesting locations
       {
         timeOfDay: 'any',
         weather: 'any', // Most obscura locations work in any weather

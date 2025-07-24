@@ -24,7 +24,7 @@ export class GoogleObservationDeckChunk extends BaseChunk {
     super(
       'Observation Deck Explorer',
       'google_observation_deck',
-      1, // Re-enabled for both modes
+      3, // Medium-high weight - scenic views and photo opportunities
       {
         weather: 'any',
         timeOfDay: 'any',

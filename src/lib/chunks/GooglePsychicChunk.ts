@@ -24,7 +24,7 @@ export class GooglePsychicChunk extends BaseChunk {
     super(
       'Psychic Reading Explorer',
       'google_psychic',
-      1, // Re-enabled for wildcard mode
+      4, // High weight - unique mystical experience
       {
         weather: 'any',
         timeOfDay: 'any',

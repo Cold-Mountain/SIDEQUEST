@@ -33,7 +33,7 @@ export class MountainChunk extends BaseChunk {
     super(
       'Mountain Explorer',
       'mountain',
-      1, // Equal weight with other chunks
+      1, // Lower weight - very common, basic outdoor activity
       {
         weather: 'any', // Mountains work in various weather
         timeOfDay: 'any',

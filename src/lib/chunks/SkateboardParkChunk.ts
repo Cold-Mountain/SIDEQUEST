@@ -36,7 +36,7 @@ export class SkateboardParkChunk extends BaseChunk {
     super(
       'Skateboard Park Explorer',
       'skateboard_park',
-      1, // Re-enabled for wildcard mode
+      2, // Medium weight - fun but common recreational activity
       {
         weather: 'any', // Skateboarding works in various weather
         timeOfDay: 'any',

@@ -15,7 +15,8 @@ export {
   spinnerVariants, 
   LoadingScreen, 
   LoadingSkeleton, 
-  QuestCardSkeleton 
+  QuestCardSkeleton,
+  Loading
 } from './loading';
 
 export { LoadingQuest } from './loading-quest';

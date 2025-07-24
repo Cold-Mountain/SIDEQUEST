@@ -33,7 +33,7 @@ export class BeachChunk extends BaseChunk {
     super(
       'Beach Explorer',
       'beach',
-      1, // Equal weight with other chunks
+      2, // Medium weight - enjoyable but common experience
       {
         season: 'any', // Beach activities available year-round in FL
         weather: 'any', // Beach activities work in various weather

@@ -19,7 +19,7 @@ export class HikingChunk extends BaseChunk {
     super(
       'Hiking Trail Explorer',
       'hiking',
-      1, // Re-enabled with equal weight
+      2, // Medium weight - popular outdoor activity but common
       {
         weather: 'any', // Hiking works in various weather
         timeOfDay: 'any', // Can hike any time

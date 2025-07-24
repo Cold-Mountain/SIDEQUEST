@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useRouter } from 'next/navigation';
 import { Button, Select, SafetyDisclaimerModal, QuestConfirmationModal } from "@/components/ui";
 import { Container } from "@/components/layout";
 import { LocationInput } from "./LocationInput";
@@ -36,6 +37,7 @@ const themeOptions = [
 ];
 
 export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating = false, questReady = false }: QuestSelectorProps) {
+  const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
   const [questStarted, setQuestStarted] = React.useState(false);
   const [showSafetyDisclaimer, setShowSafetyDisclaimer] = React.useState(false);
@@ -94,6 +96,16 @@ export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating
     setShowQuestConfirmation(false);
   };
 
+  const handleMakeYourOwn = () => {
+    if (options.location) {
+      // Create a location name from available data
+      const locationName = options.location.city || 
+                          `${options.location.latitude.toFixed(2)}, ${options.location.longitude.toFixed(2)}`;
+      // Navigate to make-your-own page with location data
+      router.push(`/make-your-own?lat=${options.location.latitude}&lng=${options.location.longitude}&location=${encodeURIComponent(locationName)}`);
+    }
+  };
+
   const isComplete = options.theme && options.location;
 
   return (
@@ -139,6 +151,22 @@ export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating
                 }}
               >
                 {isGenerating ? 'Generating Quest...' : questStarted ? 'Quest Generated!' : 'Generate Quest'}
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="xl"
+                onClick={handleMakeYourOwn}
+                disabled={!options.location || questStarted || isGenerating}
+                className="transition-all duration-500 font-bold"
+                style={{ 
+                  padding: '16px 32px',
+                  borderColor: '#22d3ee',
+                  color: options.location && !questStarted && !isGenerating ? '#22d3ee' : '#9CA3AF',
+                  backgroundColor: 'transparent'
+                }}
+              >
+                Make Your Own Quest
               </Button>
               
               {!questStarted && !isGenerating && (

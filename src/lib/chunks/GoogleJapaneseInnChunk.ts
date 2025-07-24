@@ -24,7 +24,7 @@ export class GoogleJapaneseInnChunk extends BaseChunk {
     super(
       'Japanese Inn Explorer',
       'google_japanese_inn',
-      1, // Equal weight with other chunks
+      4, // High weight - unique cultural and authentic experience
       {
         weather: 'any',
         timeOfDay: 'any',

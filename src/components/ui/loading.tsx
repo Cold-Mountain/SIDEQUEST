@@ -134,10 +134,29 @@ const QuestCardSkeleton: React.FC = () => {
   );
 };
 
+// Simple Loading Component
+interface LoadingProps {
+  className?: string;
+  message?: string;
+}
+
+const Loading: React.FC<LoadingProps> = ({ 
+  className, 
+  message = "Loading..." 
+}) => {
+  return (
+    <div className={cn("flex items-center justify-center space-x-2", className)}>
+      <Spinner variant="light" size="default" />
+      <span className="text-white">{message}</span>
+    </div>
+  );
+};
+
 export { 
   Spinner, 
   spinnerVariants, 
   LoadingScreen, 
   LoadingSkeleton, 
-  QuestCardSkeleton 
+  QuestCardSkeleton,
+  Loading
 };
