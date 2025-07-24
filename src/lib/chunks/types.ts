@@ -15,6 +15,7 @@ export interface ChunkLocation {
   rating?: number;
   priceLevel?: string;
   hours?: string;
+  tags?: string[]; // Special tags for categorizing locations (e.g., 'darksky-certified', 'gold-tier')
 }
 
 export interface ChunkConditions {

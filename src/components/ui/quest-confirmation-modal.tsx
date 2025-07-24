@@ -69,7 +69,7 @@ export function QuestConfirmationModal({ isOpen, onConfirm, onCancel }: QuestCon
             onClick={onCancel}
             className="flex-1 border-[var(--color-border)] hover:bg-[var(--color-surface)] transition-all duration-300 transform hover:scale-105"
           >
-            I'm Not Ready
+            I&apos;m Not Ready
           </Button>
           <Button
             variant="primary"

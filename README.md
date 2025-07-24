@@ -1,7 +1,9 @@
-# 🗺️ Sidequest App  
+# 🗺️ Sidequest App (BETA)  
 **Complete Project Documentation**
 
-Sidequest is an adventure-generating app that crafts meaningful, real-world quests based on user preferences, external data, and curated content blocks. It’s a tool for spontaneity, exploration, and transformation.
+Sidequest is an adventure-generating app that crafts meaningful, real-world quests based on user preferences, external data, and curated content blocks. It's a tool for spontaneity, exploration, and transformation.
+
+**🌟 NEW IN BETA:** Stargazing adventures powered by the comprehensive DarkSky International database of certified dark sky locations!
 
 ---
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Container } from '@/components/layout';
@@ -22,7 +22,7 @@ interface ChunksApiResponse {
   error?: string;
 }
 
-export default function MakeYourOwnPage() {
+function MakeYourOwnContent() {
   const searchParams = useSearchParams();
   const [chunks, setChunks] = useState<ChunkInfo[]>([]);
   const [loading, setLoading] = useState(true);
@@ -186,5 +186,13 @@ export default function MakeYourOwnPage() {
         </div>
       </Container>
     </div>
+  );
+}
+
+export default function MakeYourOwnPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MakeYourOwnContent />
+    </Suspense>
   );
 }

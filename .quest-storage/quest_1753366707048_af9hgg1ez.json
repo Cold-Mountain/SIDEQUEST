@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753366707048_af9hgg1ez",
+  "title": "Seek out the Ruby Lake Observation",
+  "description": "Seek out the Ruby Lake Observation Deck, a place where the veil between worlds thins. Your task is to thoroughly explore this elevated sanctuary. Only by truly immersing yourself in its panoramic gaze will the path forward be revealed.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T14:18:27.048Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.40683063017681,
+      "longitude": -81.51161445205452,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-observation-ChIJ-aEgWc6B3YgRSXc357QyZhk",
+    "title": "Ruby Lake Observation Deck",
+    "description": "An elevated observation deck offering panoramic views and perfect photo opportunities.",
+    "lat": 28.39513,
+    "lng": -81.49514599999999,
+    "location": "11000 Lemon Lake Blvd, Orlando",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJ-aEgWc6B3YgRSXc357QyZhk",
+    "type": "trail"
+  }
+}

@@ -221,6 +221,10 @@ body {
   box-shadow: 0 0 20px rgba(16, 29, 66, 0.3);
 }
 
+.mystical-glow-subtle {
+  box-shadow: 0 0 8px rgba(124, 58, 237, 0.2);
+}
+
 .primary-glow {
   box-shadow: 0 0 20px rgba(137, 210, 220, 0.4);
 }

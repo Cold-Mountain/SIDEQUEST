@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Header, Footer } from "@/components/layout";
+import { Header } from "@/components/layout";
 
 interface ScrollLayoutProps {
   children: React.ReactNode;
@@ -9,20 +9,13 @@ interface ScrollLayoutProps {
 
 export function ScrollLayout({ children }: ScrollLayoutProps) {
   const [showHeader, setShowHeader] = React.useState(false);
-  const [showFooter, setShowFooter] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
       
       // Show header after scrolling down 100px
       setShowHeader(scrollY > 100);
-      
-      // Show footer when near bottom of page (within 200px)
-      const nearBottom = scrollY + windowHeight >= documentHeight - 200;
-      setShowFooter(nearBottom);
     };
 
     // Initial check
@@ -50,15 +43,6 @@ export function ScrollLayout({ children }: ScrollLayoutProps) {
       <main className="flex-1">
         {children}
       </main>
-      
-      {/* Footer with slide-up animation */}
-      <div 
-        className={`transition-transform duration-300 ease-in-out ${
-          showFooter ? 'translate-y-0' : 'translate-y-full'
-        }`}
-      >
-        <Footer />
-      </div>
     </div>
   );
 }

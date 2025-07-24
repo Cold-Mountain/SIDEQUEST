@@ -24,35 +24,13 @@ export function Header({ className }: HeaderProps) {
           <span className="text-display text-2xl font-bold text-[var(--color-text-primary)]">
             Sidequest
           </span>
+          <span className="text-xs font-medium text-[var(--color-mystical)] bg-[var(--color-mystical)]/10 px-2 py-1 rounded-full border border-[var(--color-mystical)]/20 mystical-glow-subtle">
+            BETA
+          </span>
         </Link>
 
-        {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <Link 
-            href="/discover" 
-            className="text-body text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors"
-          >
-            Discover
-          </Link>
-          <Link 
-            href="/dashboard" 
-            className="text-body text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors"
-          >
-            Dashboard
-          </Link>
-          <Link 
-            href="/submit" 
-            className="text-body text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors"
-          >
-            Submit Quest
-          </Link>
-        </nav>
-
-        {/* Actions */}
-        <div className="flex items-center space-x-4">
-          <Button variant="outline" size="sm" className="hidden sm:flex">
-            Sign In
-          </Button>
+        {/* Simple Start Quest Button */}
+        <div className="flex items-center">
           <Button variant="mystical" size="sm">
             Start Quest
           </Button>

@@ -21,6 +21,7 @@ export class CoolnessCalculator {
       'google_psychic': 4,
       'google_cat_cafe': 4,
       'google_japanese_inn': 4,
+      'stargazing': 4,
       
       // Medium-high coolness (3 points)
       'google_observation_deck': 3,
@@ -76,10 +77,10 @@ export class CoolnessCalculator {
     if (quest.atlasLocation) {
       const mockLocation: ChunkLocation = {
         id: quest.atlasLocation.id || 'atlas',
-        title: quest.atlasLocation.title,
-        description: quest.atlasLocation.description,
-        lat: quest.atlasLocation.lat,
-        lng: quest.atlasLocation.lng,
+        title: quest.atlasLocation.title || 'Atlas Obscura Location',
+        description: quest.atlasLocation.description || 'Interesting location from Atlas Obscura',
+        lat: quest.atlasLocation.lat || 0,
+        lng: quest.atlasLocation.lng || 0,
         location: quest.atlasLocation.location || '',
         type: 'obscura',
         url: quest.atlasLocation.url,

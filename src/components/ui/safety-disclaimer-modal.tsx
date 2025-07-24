@@ -63,7 +63,7 @@ export function SafetyDisclaimerModal({ isOpen, onAccept, onDecline }: SafetyDis
             <div className="flex items-start space-x-3 p-3 bg-[var(--color-surface-secondary)] rounded-lg border border-[var(--color-border)]">
               <div className="w-2 h-2 bg-[var(--color-text-muted)] rounded-full mt-2 flex-shrink-0" />
               <p className="text-sm text-[var(--color-text-primary)]">
-                <strong>Don't be stupid.</strong> Think before you act and consider the consequences of your actions.
+                <strong>Don&apos;t be stupid.</strong> Think before you act and consider the consequences of your actions.
               </p>
             </div>
           </div>

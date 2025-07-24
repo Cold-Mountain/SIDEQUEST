@@ -38,7 +38,6 @@ const themeOptions = [
 
 export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating = false, questReady = false }: QuestSelectorProps) {
   const router = useRouter();
-  const [isOpen, setIsOpen] = React.useState(false);
   const [questStarted, setQuestStarted] = React.useState(false);
   const [showSafetyDisclaimer, setShowSafetyDisclaimer] = React.useState(false);
   const [showQuestConfirmation, setShowQuestConfirmation] = React.useState(false);
@@ -136,6 +135,52 @@ export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating
           </div>
 
           <div className="space-y-6">
+            {/* Quest Options - Always Visible */}
+            <div className="bg-black/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 space-y-6 max-w-md mx-auto shadow-2xl mb-6" style={{ boxShadow: '0 0 20px rgba(34, 211, 238, 0.3), inset 0 0 20px rgba(0,0,0,0.5)' }}>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
+                    Quest Mode
+                  </label>
+                  <div className="relative">
+                    <Select
+                      variant="mystical"
+                      value={options.theme}
+                      onChange={(e) => handleOptionChange("theme", e.target.value)}
+                    >
+                      <option value="">Select quest mode...</option>
+                      {themeOptions.map(option => (
+                        <option key={option.value} value={option.value} title={option.description}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </Select>
+                  </div>
+                  
+                  {/* Theme descriptions */}
+                  <div className="mt-2 space-y-1">
+                    {themeOptions.map(option => (
+                      <div
+                        key={option.value}
+                        className={`text-xs text-cyan-200 drop-shadow-sm transition-opacity duration-200 ${
+                          options.theme === option.value ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'
+                        }`}
+                      >
+                        {option.description}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
+                    Location
+                  </label>
+                  <LocationInput onLocationChange={handleLocationChange} />
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button 
                 variant="secondary" 
@@ -168,65 +213,7 @@ export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating
               >
                 Make Your Own Quest
               </Button>
-              
-              {!questStarted && !isGenerating && (
-                <Button 
-                  variant="outline"
-                  size="default"
-                  onClick={() => setIsOpen(!isOpen)}
-                  className="w-12 h-12 p-0 rounded-full bg-[var(--color-surface-elevated)] text-[var(--color-primary)] border-[var(--color-primary)] font-bold hover:bg-[var(--color-primary)]/5"
-                >
-                  ▼
-                </Button>
-              )}
             </div>
-
-            {isOpen && !questStarted && !isGenerating && (
-              <div className="bg-black/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 space-y-6 max-w-md mx-auto shadow-2xl" style={{ boxShadow: '0 0 20px rgba(34, 211, 238, 0.3), inset 0 0 20px rgba(0,0,0,0.5)' }}>
-                <div className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
-                      Quest Mode
-                    </label>
-                    <div className="relative">
-                      <Select
-                        variant="mystical"
-                        value={options.theme}
-                        onChange={(e) => handleOptionChange("theme", e.target.value)}
-                      >
-                        <option value="">Select quest mode...</option>
-                        {themeOptions.map(option => (
-                          <option key={option.value} value={option.value} title={option.description}>
-                            {option.label}
-                          </option>
-                        ))}
-                      </Select>
-                    </div>
-                    
-                    {/* Theme descriptions on hover */}
-                    <div className="mt-2 space-y-1">
-                      {themeOptions.map(option => (
-                        <div
-                          key={option.value}
-                          className={`text-xs text-cyan-200 drop-shadow-sm transition-opacity duration-200 ${
-                            options.theme === option.value ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'
-                          }`}
-                        >
-                          {option.description}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
-                      Location
-                    </label>
-                    <LocationInput onLocationChange={handleLocationChange} />
-                  </div>
-                </div>
-              </div>
-            )}
 
           </div>
 

@@ -18,8 +18,8 @@ const crimsonText = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Sidequest - Real Adventures Await",
-  description: "Push yourself outside your comfort zone with meaningful, authentic experiences. Combat social media superficiality through real-world adventures.",
+  title: "Sidequest Beta - Real Adventures Await",
+  description: "Push yourself outside your comfort zone with meaningful, authentic experiences. Combat social media superficiality through real-world adventures. Now featuring stargazing adventures!",
   keywords: "adventure, experiences, quests, authentic, meaningful, outdoor, activities",
   authors: [{ name: "Sidequest Team" }],
   creator: "Sidequest",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://sidequest.app",
     siteName: "Sidequest",
-    title: "Sidequest - Real Adventures Await",
-    description: "Push yourself outside your comfort zone with meaningful, authentic experiences.",
+    title: "Sidequest Beta - Real Adventures Await",
+    description: "Push yourself outside your comfort zone with meaningful, authentic experiences. Now featuring stargazing adventures!",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sidequest - Real Adventures Await",
-    description: "Push yourself outside your comfort zone with meaningful, authentic experiences.",
+    title: "Sidequest Beta - Real Adventures Await",
+    description: "Push yourself outside your comfort zone with meaningful, authentic experiences. Now featuring stargazing adventures!",
   },
   robots: {
     index: true,

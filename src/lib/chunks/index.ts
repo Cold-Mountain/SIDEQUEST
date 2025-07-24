@@ -23,6 +23,7 @@ export * from './GooglePsychicChunk';
 export * from './GoogleJapaneseInnChunk';
 export * from './GoogleCatCafeChunk';
 export * from './GoogleOffRoadingChunk';
+export * from './StargazingChunk';
 
 // Chunk initialization
 import { chunkManager } from './ChunkManager';
@@ -45,6 +46,7 @@ import { GooglePsychicChunk } from './GooglePsychicChunk';
 import { GoogleJapaneseInnChunk } from './GoogleJapaneseInnChunk';
 import { GoogleCatCafeChunk } from './GoogleCatCafeChunk';
 import { GoogleOffRoadingChunk } from './GoogleOffRoadingChunk';
+import { StargazingChunk } from './StargazingChunk';
 
 // Initialize chunks
 export const initializeChunks = () => {
@@ -143,6 +145,11 @@ export const initializeChunks = () => {
     const googleOffRoadingChunk = new GoogleOffRoadingChunk(googleApiKey);
     chunkManager.registerChunk(googleOffRoadingChunk);
     console.log('Google Off-Roading chunk registered successfully');
+    
+    // Stargazing chunk
+    const stargazingChunk = new StargazingChunk(googleApiKey);
+    chunkManager.registerChunk(stargazingChunk);
+    console.log('Stargazing chunk registered successfully');
   } else {
     console.warn('GOOGLE_MAPS_API_KEY not found, Google Places chunks disabled');
   }

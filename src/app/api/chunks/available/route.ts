@@ -68,7 +68,8 @@ function getChunkDescription(type: string): string {
     wind_generator: 'Discover renewable energy and wind farm locations',
     mountain: 'Find mountain peaks and elevated terrain',
     lighthouse: 'Locate historic lighthouses and maritime landmarks',
-    pier: 'Discover piers, docks, and waterfront structures'
+    pier: 'Discover piers, docks, and waterfront structures',
+    stargazing: '✨ NEW IN BETA: Find observatories, planetariums, and DarkSky certified locations for exceptional stargazing'
   };
   
   return descriptions[type] || 'Explore interesting locations in this category';
