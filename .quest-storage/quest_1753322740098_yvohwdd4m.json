@@ -1,0 +1,36 @@
+{
+  "id": "quest_1753322740098_yvohwdd4m",
+  "title": "The whispers of the current speak",
+  "description": "The whispers of the current speak of a peculiar vision awaiting you. Venture to Big Toho Marina, where the ordinary conceals the profound. There, amidst the rhythm of the docks and the gleam of the water, you must visit Art Museum like in Ferris Bueller. Seek the hidden beauty in the everyday, let your gaze linger on the details, and discover the true artistry that resides within the marina's embrace.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:05:40.098Z",
+  "originalBlocks": [
+    "Visit Art Museum like in Ferris Bueller"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.4522,
+      "longitude": -81.4678,
+      "city": "Orlando",
+      "state": "Florida",
+      "country": "US",
+      "zip": "32819",
+      "accuracy": 50000
+    }
+  },
+  "trailLocation": {
+    "id": "google-marina-ChIJd8PphRWE3YgRIGuCL9kGhIg",
+    "title": "Big Toho Marina",
+    "description": "A waterfront marina with boats, docks, and scenic harbor views perfect for maritime adventures.",
+    "lat": 28.2869545,
+    "lng": -81.4088294,
+    "location": "69 Lakeview Dr, Kissimmee",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJd8PphRWE3YgRIGuCL9kGhIg",
+    "type": "trail"
+  }
+}

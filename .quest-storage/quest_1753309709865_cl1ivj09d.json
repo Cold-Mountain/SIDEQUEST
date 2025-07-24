@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753309709865_cl1ivj09d",
+  "title": "The Mucky Duck awaits, a treacherous",
+  "description": "The Mucky Duck awaits, a treacherous path for those brave enough to challenge its rugged terrain. The whispers tell of ancient spirits, long forgotten, stirring in the deep ruts and thick mud. To appease them, and to prove your worth, you must journey deep into the Mucky Duck. There, amidst the grit and the challenge, you are to make a dirtman or sandman, formed from the very essence of the trail. And as a final flourish, mark your creation with a celebrity pic, a tribute to the strange confluence of fame and forgotten earth. Do this, and perhaps, the Mucky Duck will yield its secrets.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:28:29.865Z",
+  "originalBlocks": [
+    "Make snowman/dirtman/sandman with celebrity pic"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.40689943859081,
+      "longitude": -81.5116646098262,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJd560xshh3YgRR-qSm8sw6GI",
+    "title": "Mucky Duck",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 28.4054794,
+    "lng": -81.8090133,
+    "location": "4000 FL-33, Clermont",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJd560xshh3YgRR-qSm8sw6GI",
+    "type": "trail"
+  }
+}

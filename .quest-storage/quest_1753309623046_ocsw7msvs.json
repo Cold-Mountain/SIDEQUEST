@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753309623046_ocsw7msvs",
+  "title": "The whisper of the winds carries",
+  "description": "The whisper of the winds carries a new challenge, seeker. There exists a place, an untamed stretch known as Mucky Duck, where the earth itself holds secrets. Its rugged terrain and muddy depths are a proving ground. You are tasked to journey into the heart of Mucky Duck and, amidst its treacherous paths, obtain 500 pennies. They are not merely coins, but a key to what lies hidden within the mire. Return when your pockets are heavy with the metallic weight of your success.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:27:03.046Z",
+  "originalBlocks": [
+    "Obtain 500 pennies"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.40689943859081,
+      "longitude": -81.5116646098262,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJd560xshh3YgRR-qSm8sw6GI",
+    "title": "Mucky Duck",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 28.4054794,
+    "lng": -81.8090133,
+    "location": "4000 FL-33, Clermont",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJd560xshh3YgRR-qSm8sw6GI",
+    "type": "trail"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "quest_1753326977687_1pnkds77x",
+  "title": "The sea spray carries secrets for",
+  "description": "The sea spray carries secrets for those brave enough to seek them. A faint echo from the forgotten past beckons you towards the coast. Your journey leads to the Point Mendocino Trail, where your task is to explore its winding paths. Seek out what the ocean has patiently guarded within its ancient embrace.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T03:16:17.687Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 39.4436579,
+      "longitude": -123.8057607,
+      "city": "Fort Bragg",
+      "state": "",
+      "country": "United States",
+      "accuracy": 5000
+    }
+  },
+  "trailLocation": {
+    "id": "google-hiking-ChIJ8xhFIONNgIARnus7XhKo1Mw",
+    "title": "Point Mendocino Trail",
+    "description": "A scenic hiking area with trails perfect for outdoor adventures and nature exploration. Rated 4.9/5 by visitors.",
+    "lat": 39.3048053,
+    "lng": -123.8097658,
+    "location": "Point Mendocino, Mendocino",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJ8xhFIONNgIARnus7XhKo1Mw",
+    "type": "trail"
+  }
+}

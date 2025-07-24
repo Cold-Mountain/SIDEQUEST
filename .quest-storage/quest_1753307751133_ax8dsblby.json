@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307751133_ax8dsblby",
+  "title": "A strange calling pulls you towards",
+  "description": "A strange calling pulls you towards Beach Location. Deep within its tranquil embrace, you will find a secluded pond. It is there, by its serene waters, that you must feed ducks, for their gratitude may unlock a path previously unseen.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:55:51.133Z",
+  "originalBlocks": [
+    "Feed ducks at a pond"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.4,
+      "longitude": -81.5,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-beach-51f06f7dacc16054c05918f46643fe613c40f00102f90131c6991200000000",
+    "title": "Beach Location",
+    "description": "A beautiful beach perfect for relaxation and water activities.",
+    "lat": 28.382785999903803,
+    "lng": -81.5118209099744,
+    "location": "Beach Location (28.3828, -81.5118)",
+    "type": "trail"
+  }
+}

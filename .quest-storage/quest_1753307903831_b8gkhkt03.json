@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753307903831_b8gkhkt03",
+  "title": "A faint melody calls to you",
+  "description": "A faint melody calls to you from the east, carried on the breeze of dawn. Your journey leads to the Cady Way Trail, a place where the air itself hums with forgotten echoes. There, under the open sky, you must sing from your song database, letting your voice mingle with the whispers of the path. Only then will the next path reveal itself.",
+  "difficulty": "easy",
+  "timeframe": "quick",
+  "expiresAt": "2025-07-24T21:58:23.831Z",
+  "originalBlocks": [
+    "Sing from song database at location"
+  ],
+  "userInputs": {
+    "timeframe": "quick",
+    "difficulty": "easy",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.4,
+      "longitude": -81.5
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11172998",
+    "title": "Cady Way Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features paved surface.",
+    "lat": 28.5954627,
+    "lng": -81.3157491,
+    "location": "Trail Location (28.5955, -81.3157)",
+    "type": "trail"
+  }
+}

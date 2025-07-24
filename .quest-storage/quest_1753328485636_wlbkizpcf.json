@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753328485636_wlbkizpcf",
+  "title": "The tides speak of Waturi Beach,",
+  "description": "The tides speak of Waturi Beach, a place of deceptive tranquility. There, where the waves kiss the shore, your spirit is called to explore Waturi Beach. Seek out its hidden coves, its forgotten sands, for within its beauty lies a truth veiled by the sun-drenched waters. Go, and uncover what the currents whisper only to the brave.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T03:41:25.636Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.40681995802424,
+      "longitude": -81.51165748772043,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-beach-ChIJGRMVnwJ_54gR0MPzLiIBqeQ",
+    "title": "Waturi Beach",
+    "description": "A beautiful beach perfect for relaxation, swimming, and water activities.",
+    "lat": 28.4619531,
+    "lng": -81.4721191,
+    "location": "6000 Universal Blvd, Orlando",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJGRMVnwJ_54gR0MPzLiIBqeQ",
+    "type": "trail"
+  }
+}

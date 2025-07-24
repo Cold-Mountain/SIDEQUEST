@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753308606696_5wdg3ppuc",
+  "title": "The whispers of the water call",
+  "description": "The whispers of the water call to you, adventurer. A subtle energy flows through the Contemporary Resort Marina, a place where the mundane meets the mystical. Your task, should you choose to accept it, is to give someone random flowers at the Contemporary Resort Marina. Let the simple gesture unlock a hidden truth within that vibrant, watery expanse.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:10:06.696Z",
+  "originalBlocks": [
+    "Give someone random flowers"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.40698181467517,
+      "longitude": -81.51167877253866,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-marina-ChIJlwKh_pyA54gRoQ8nyxaxM-Q",
+    "title": "Contemporary Resort Marina",
+    "description": "A waterfront marina with boats, docks, and scenic harbor views perfect for maritime adventures.",
+    "lat": 28.4150748,
+    "lng": -81.57300289999999,
+    "location": "Orlando",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJlwKh_pyA54gRoQ8nyxaxM-Q",
+    "type": "trail"
+  }
+}

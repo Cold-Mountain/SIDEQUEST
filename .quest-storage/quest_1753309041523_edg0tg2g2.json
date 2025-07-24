@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753309041523_edg0tg2g2",
+  "title": "A subtle resonance emanates from the",
+  "description": "A subtle resonance emanates from the wilds, guiding those who listen. Your path leads to the Seminole Wekiva Trail - San Sebastian Trailhead. Within that scenic expanse, where the whispers of nature are clearest, you must find a kindred spirit and slow dance with someone. Let the rhythm of the ancient trees and winding trails be your guide in this tender, fleeting moment.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:17:21.523Z",
+  "originalBlocks": [
+    "Slow dance with someone"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.40694260862698,
+      "longitude": -81.5116652300191,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-hiking-ChIJudfEQ0Rx54gR0dY2Sz2fbEI",
+    "title": "Seminole Wekiva Trail - San Sebastian Trailhead",
+    "description": "A scenic hiking area with trails perfect for outdoor adventures and nature exploration. Rated 4.8/5 by visitors.",
+    "lat": 28.6646327,
+    "lng": -81.4128873,
+    "location": "753 W State Rd 436, Altamonte Springs",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJudfEQ0Rx54gR0dY2Sz2fbEI",
+    "type": "trail"
+  }
+}

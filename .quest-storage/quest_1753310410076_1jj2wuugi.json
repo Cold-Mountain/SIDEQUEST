@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753310410076_1jj2wuugi",
+  "title": "A tremor in the natural order",
+  "description": "A tremor in the natural order demands a delicate touch. You are called to journey to the Green Mountain Scenic Overlook & Trailhead. There, where the earth meets the sky and the panoramic views unfold, you must Juggle for 30 seconds. Let the stillness of the overlook guide your hands, and the ancient spirits of the peak be your witnesses.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:40:10.076Z",
+  "originalBlocks": [
+    "Juggle for 30 seconds"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406839618077765,
+      "longitude": -81.5116715644617,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-hiking-ChIJn9L2FGWQ54gRPIE1EhNsEMg",
+    "title": "Green Mountain Scenic Overlook & Trailhead",
+    "description": "A scenic hiking area with trails perfect for outdoor adventures and nature exploration. Rated 4.7/5 by visitors.",
+    "lat": 28.6468797,
+    "lng": -81.70981669999999,
+    "location": "20700 County Rd 455, Minneola",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJn9L2FGWQ54gRPIE1EhNsEMg",
+    "type": "trail"
+  }
+}

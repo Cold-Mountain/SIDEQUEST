@@ -40,7 +40,16 @@ export interface SidequestCompletion {
 }
 
 // Re-export database types
-export type { QuestBlock, LocationSeed, UserSubmission, QuestInput } from './database';
+export type { 
+  QuestBlock, 
+  LocationSeed, 
+  UserSubmission, 
+  QuestInput, 
+  AtlasObscuraLocation, 
+  TrailLocation,
+  GeneratedQuest,
+  QuestGenerationResponse 
+} from './database';
 
 // Re-export location types
 export type { Location, LocationResult, LocationPermission, IPLocationResponse } from './location';

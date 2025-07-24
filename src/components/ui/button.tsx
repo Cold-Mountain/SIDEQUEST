@@ -9,10 +9,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary: [
-          "bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]",
+          "bg-gradient-to-r from-[#7C3AED] to-[#6D28D9]",
           "text-white shadow-md hover:shadow-lg",
-          "hover:from-[var(--color-primary-light)] hover:to-[var(--color-primary)]",
-          "focus-visible:ring-[var(--color-primary)]"
+          "hover:from-[#8B5CF6] hover:to-[#7C3AED]",
+          "focus-visible:ring-[#7C3AED]"
         ],
         secondary: [
           "bg-gradient-to-r from-[var(--color-secondary)] to-[var(--color-secondary-dark)]",
@@ -28,17 +28,17 @@ const buttonVariants = cva(
           "border border-white/20"
         ],
         outline: [
-          "border-2 border-[var(--color-primary)] text-[var(--color-primary)]",
-          "bg-transparent hover:bg-[var(--color-primary)] hover:text-white",
-          "focus-visible:ring-[var(--color-primary)]"
+          "border-2 border-[#7C3AED] text-[#7C3AED]",
+          "bg-transparent hover:bg-[#7C3AED] hover:text-white",
+          "focus-visible:ring-[#7C3AED]"
         ],
         ghost: [
           "text-[var(--color-text-primary)] hover:bg-[var(--color-border-light)]",
-          "focus-visible:ring-[var(--color-primary)]"
+          "focus-visible:ring-[#7C3AED]"
         ],
         link: [
-          "text-[var(--color-primary)] underline-offset-4",
-          "hover:underline focus-visible:ring-[var(--color-primary)]"
+          "text-[#7C3AED] underline-offset-4",
+          "hover:underline focus-visible:ring-[#7C3AED]"
         ],
         destructive: [
           "bg-[var(--color-error)] text-white shadow-md",

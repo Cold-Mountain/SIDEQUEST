@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307966377_b0459iu7p",
+  "title": "The celestial tapestry holds secrets, visible",
+  "description": "The celestial tapestry holds secrets, visible only to those who truly look. Journey to Hideaway Bay, where the world touches the heavens. There, by the tranquil waters, you must simply stare at the clouds. Watch for patterns, for shifts, for whispers carried on the wind. Your answers may drift into view.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:59:26.377Z",
+  "originalBlocks": [
+    "Stare at the clouds"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.406924557611866,
+      "longitude": -81.51167983627867,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-beach-51b042ba63d26154c059aebc5d9ece5d3c40f00102f90167d504250000000092030c486964656177617920426179",
+    "title": "Hideaway Bay",
+    "description": "A beautiful beach perfect for relaxation and water activities.",
+    "lat": 28.366433999999998,
+    "lng": -81.52846615972044,
+    "location": "Hideaway Bay, Lake Buena Vista, Florida, United States of America",
+    "type": "trail"
+  }
+}

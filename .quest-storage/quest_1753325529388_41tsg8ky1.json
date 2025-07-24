@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753325529388_41tsg8ky1",
+  "title": "A whisper from the depths calls",
+  "description": "A whisper from the depths calls to you, adventurer. Seek the ancient secrets hidden at Waterfront Pier. There, among the weathered planks and salt-sprayed railings, you must decipher cryptic symbols etched into the wood, for they hold a truth long forgotten.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:52:09.388Z",
+  "originalBlocks": [
+    ""
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.406810264180308,
+      "longitude": -81.51165416961263,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-pier-51517d31a53f6254c059403e22707f613c40f00102f9015375e10200000000",
+    "title": "Waterfront Pier",
+    "description": "A scenic waterfront pier perfect for strolling, fishing, and enjoying panoramic water views.",
+    "lat": 28.380874713883692,
+    "lng": -81.53515035442553,
+    "location": "Carriage Path, Lake Buena Vista, FL 32830, United States of America",
+    "type": "trail"
+  }
+}

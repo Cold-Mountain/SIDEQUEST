@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753308074518_e7rb2unz4",
+  "title": "The currents whisper secrets, traveler, secrets",
+  "description": "The currents whisper secrets, traveler, secrets only the water remembers. Your path leads to a place of serene beauty, known simply as Beach Location. It is there, upon its tranquil shores, that you must perform a ritual as ancient as the tides themselves. Take up the flat stones you find there and skip stones on water. Do not underestimate this task; the ripples you create, the way they dance and vanish, holds a key to what lies beneath the surface, a truth that seeks to be unveiled by the gentle disturbance of the calm. Seek the true pattern, and the water will reveal its purpose.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:01:14.518Z",
+  "originalBlocks": [
+    "Skip stones on water"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.406924557611866,
+      "longitude": -81.51167983627867,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-beach-51e875b767c05d54c059f89a444eba673c40f00102f9014678741200000000",
+    "title": "Beach Location",
+    "description": "A beautiful beach perfect for relaxation and water activities.",
+    "lat": 28.405186549901345,
+    "lng": -81.46486847797462,
+    "location": "Beach Location (28.4052, -81.4649)",
+    "type": "trail"
+  }
+}

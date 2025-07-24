@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753323659122_tlja4p0uc",
+  "title": "Venture to the Historic Lighthouse, where",
+  "description": "Venture to the Historic Lighthouse, where the sea's ancient secrets are said to be held within its very stones. A particular yearning compels me, one that can only be satisfied by a very specific culinary delight. Your task is to get pistachio ice cream from its grounds or within its shadowed reach. Only when this delicate flavor touches your tongue will the true nature of this beacon be revealed.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:20:59.122Z",
+  "originalBlocks": [
+    "Get pistachio ice cream"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406811937487888,
+      "longitude": -81.51166747736826,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-lighthouse-51d9ff4af8ef5954c059563901c2e2493c40f00103f90140da993d01000000",
+    "title": "Historic Lighthouse",
+    "description": "A historic lighthouse standing as a beacon of maritime heritage with stunning coastal views.",
+    "lat": 28.2886163,
+    "lng": -81.4052716,
+    "location": "Lakeshore Trail, Kissimmee, FL 34741, United States of America",
+    "type": "trail"
+  }
+}

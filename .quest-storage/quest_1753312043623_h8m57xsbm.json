@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753312043623_h8m57xsbm",
+  "title": "They speak of a hidden gallery,",
+  "description": "They speak of a hidden gallery, not of man's making, but of nature's own hand. Your path leads to Nature Path, where the very earth is sand and secrets are whispered on the wind. There, you must visit an art museum like in Ferris Bueller, discerning beauty in the unexpected, finding masterpieces sculpted by time and light amidst the scenic areas.",
+  "difficulty": "easy",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T23:07:23.623Z",
+  "originalBlocks": [
+    "Visit Art Museum like in Ferris Bueller"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "easy",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 25.7617,
+      "longitude": -80.1918,
+      "city": "Miami",
+      "state": "FL"
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11103657",
+    "title": "Nature Path",
+    "description": "A natural path through scenic areas. Features sand surface.",
+    "lat": 25.6664715,
+    "lng": -80.1582498,
+    "location": "Trail Location (25.6665, -80.1582)",
+    "type": "trail"
+  }
+}

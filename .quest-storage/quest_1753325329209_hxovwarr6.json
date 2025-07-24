@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753325329209_hxovwarr6",
+  "title": "Your next task calls you to",
+  "description": "Your next task calls you to the Lake Apopka Loop Observation Tower, a sentinel gazing upon the vast expanse. It is there, amidst the whispering winds, that you must explore its heights and uncover the hidden perspectives it offers, for a forgotten truth lies etched into the very horizon from its summit.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:48:49.209Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406810264180308,
+      "longitude": -81.51165416961263,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-observation-ChIJla6TjYOb54gRCFE9nVmGjPg",
+    "title": "Lake Apopka Loop Observation Tower",
+    "description": "An elevated observation deck offering panoramic views and perfect photo opportunities.",
+    "lat": 28.6619657,
+    "lng": -81.684403,
+    "location": "Lake Apopka Loop Trail, Minneola",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJla6TjYOb54gRCFE9nVmGjPg",
+    "type": "trail"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307278454_mm47i4o3v",
+  "title": "A peculiar resonance emanates from the",
+  "description": "A peculiar resonance emanates from the West Orange Trail, a whisper of unseen forces at play. Journey to its asphalt embrace, for there lies a unique test of patience and precision. You are tasked to build the tallest card house, one that incorporates 52 or more cards, directly upon its path. Only then shall the true stillness of that place yield its secrets.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:47:58.454Z",
+  "originalBlocks": [
+    "Try to build the tallest card house (52+ cards)"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406856562915856,
+      "longitude": -81.5116830433751,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11174376",
+    "title": "West Orange Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features asphalt surface.",
+    "lat": 28.6229662,
+    "lng": -81.5018857,
+    "location": "Trail Location (28.6230, -81.5019)",
+    "type": "trail"
+  }
+}

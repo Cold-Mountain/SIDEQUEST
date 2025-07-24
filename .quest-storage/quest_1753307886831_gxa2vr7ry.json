@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307886831_gxa2vr7ry",
+  "title": "A curious whisper has reached me,",
+  "description": "A curious whisper has reached me, speaking of the Cady Way Trail. It is said that along its paved path, the very ground holds forgotten offerings. To uncover the truth of these whispers, you must journey to the Cady Way Trail and there, through diligence and keen sight, obtain 500 pennies. Their retrieval holds a secret, I am sure.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:58:06.831Z",
+  "originalBlocks": [
+    "Obtain 500 pennies"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.4,
+      "longitude": -81.5,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11172998",
+    "title": "Cady Way Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features paved surface.",
+    "lat": 28.5954627,
+    "lng": -81.3157491,
+    "location": "Trail Location (28.5955, -81.3157)",
+    "type": "trail"
+  }
+}

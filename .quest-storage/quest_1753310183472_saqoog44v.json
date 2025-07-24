@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753310183472_saqoog44v",
+  "title": "The whispers of the high places",
+  "description": "The whispers of the high places call to you, seeker. Ascend to Mountain Peak, where the very air thins with ancient energies. There, where the world unfolds beneath your feet, you must attempt 20 burpees. Only through this crucible of effort will the path forward be revealed.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:36:23.472Z",
+  "originalBlocks": [
+    "Attempt 20 burpees"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406839618077765,
+      "longitude": -81.5116715644617,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-mountain-5106c43588a06454c0593be3f0c9d4683c40f00102f901ee188e1400000000",
+    "title": "Mountain Peak",
+    "description": "A majestic mountain peak offering breathtaking views and challenging outdoor adventures.",
+    "lat": 28.40949689990087,
+    "lng": -81.57229809999998,
+    "location": "Mountain (28.4095, -81.5723)",
+    "type": "trail"
+  }
+}

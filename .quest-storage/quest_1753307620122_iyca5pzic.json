@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307620122_iyca5pzic",
+  "title": "A strange wind whispers secrets on",
+  "description": "A strange wind whispers secrets on the Chippewa Trail Connector. I sense a yearning there, a desire for something light to take flight. Your task is simple, yet profound: you must throw a paper airplane at the Chippewa Trail Connector. Let its brief, silent journey carry a message to the unseen, for only then will the path ahead reveal itself.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:53:40.123Z",
+  "originalBlocks": [
+    "Throw a paper airplane"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.4,
+      "longitude": -81.5,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11182775",
+    "title": "Chippewa Trail Connector",
+    "description": "A walking trail offering outdoor recreation opportunities. Features concrete surface.",
+    "lat": 28.6371423,
+    "lng": -81.3496359,
+    "location": "Trail Location (28.6371, -81.3496)",
+    "type": "trail"
+  }
+}

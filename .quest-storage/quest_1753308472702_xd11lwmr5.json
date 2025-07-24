@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753308472702_xd11lwmr5",
+  "title": "A peculiar shimmer of fate calls",
+  "description": "A peculiar shimmer of fate calls you to the Cady Way Trail. This seemingly ordinary paved path holds a challenge for those discerning enough to perceive it. Your task, should you choose to accept it, is to navigate its stretches and obtain 500 pennies. They are not merely currency, but fragments of a forgotten trail.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:07:52.702Z",
+  "originalBlocks": [
+    "Obtain 500 pennies"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.40698181467517,
+      "longitude": -81.51167877253866,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11172998",
+    "title": "Cady Way Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features paved surface.",
+    "lat": 28.5954627,
+    "lng": -81.3157491,
+    "location": "Trail Location (28.5955, -81.3157)",
+    "type": "trail"
+  }
+}

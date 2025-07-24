@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753308015539_p3ddzhkld",
+  "title": "A subtle hum resonates from the",
+  "description": "A subtle hum resonates from the elevated platforms where the world seems to pause. Your journey leads you to the SJRWMD Observation Tower on Lake Jessup, a place where the earthly and ethereal meet. From that vantage point, you must perform a sacred vigil: stare at the clouds. Seek not shapes or passing figures, but the vast, silent wisdom they hold, for a hidden truth awaits discovery within their endless drift.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:00:15.540Z",
+  "originalBlocks": [
+    "Stare at the clouds"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.406924557611866,
+      "longitude": -81.51167983627867,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-observation-ChIJoTWRuOZr54gRC0f8Nk0GxZQ",
+    "title": "SJRWMD Observation Tower on Lake Jessup",
+    "description": "An elevated observation deck offering panoramic views and perfect photo opportunities.",
+    "lat": 28.7277815,
+    "lng": -81.1833675,
+    "location": "3251 Elm St, Oviedo",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJoTWRuOZr54gRC0f8Nk0GxZQ",
+    "type": "trail"
+  }
+}

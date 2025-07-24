@@ -1,0 +1,34 @@
+{
+  "id": "quest_1753327263079_1mm6ywi92",
+  "title": "The tides whisper of a forgotten",
+  "description": "The tides whisper of a forgotten task, drawing you to the edge of the world. Your journey leads to Waterfront Pier, where the ceaseless waters hold more than just reflections. There, under the vast sky, you must decipher a forgotten cipher, for its secrets are bound to the currents themselves.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T03:21:03.079Z",
+  "originalBlocks": [
+    ""
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 39.4436579,
+      "longitude": -123.8057607,
+      "city": "fort bragg",
+      "state": "",
+      "country": "United States",
+      "accuracy": 5000
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-pier-51a11b502539f35ec059f27039a572b64340f00102f901276b241300000000",
+    "title": "Waterfront Pier",
+    "description": "A scenic waterfront pier perfect for strolling, fishing, and enjoying panoramic water views.",
+    "lat": 39.42508155,
+    "lng": -123.80006515,
+    "location": "Basin Street, Mendocino County, CA 95473, United States of America",
+    "type": "trail"
+  }
+}

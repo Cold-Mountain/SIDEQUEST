@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753309000245_6mrmkvu09",
+  "title": "The very fabric of reality twists",
+  "description": "The very fabric of reality twists and turns, much like the puzzle you are destined to master. Your quest takes you to the Suburban estates in Holopaw front gate, where the wild untamed lands meet the forgotten vestiges of civilization. It is there, amidst the dust and silence of the trail's beginning, that you must learn to solve Rubik's cube. The gate holds more than just a path; it holds a key to understanding patterns, both geometric and existential.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:16:40.245Z",
+  "originalBlocks": [
+    "Learn to solve Rubik's cube"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 28.40694260862698,
+      "longitude": -81.5116652300191,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJkb9Dj23s3YgRSpLJ8r5qnnk",
+    "title": "Suburban estates in Holopaw front gate",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 28.1156568,
+    "lng": -81.1258939,
+    "location": "Holopaw Groves Rd, St Cloud",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJkb9Dj23s3YgRSpLJ8r5qnnk",
+    "type": "trail"
+  }
+}

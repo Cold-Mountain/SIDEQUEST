@@ -1,0 +1,2911 @@
+
+> sidequest@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.4.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.7.228:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1007ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1405ms
+ GET / 200 in 1587ms
+ ○ Compiling /api/enhance-quest ...
+ ✓ Compiled /api/enhance-quest in 1502ms
+Loaded 21 active quests from disk
+ POST /api/enhance-quest 400 in 1983ms
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'easy',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 25.7617,
+    longitude: -80.1918,
+    city: 'Miami',
+    state: 'FL'
+  }
+}
+About to call questGenerator.generateQuests...
+Filtering 53 blocks with input: {
+  timeframe: 'afternoon',
+  difficulty: 'easy',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 25.7617,
+    longitude: -80.1918,
+    city: 'Miami',
+    state: 'FL'
+  }
+}
+Block BLK_001: PASSED all filters (theme: 'general', difficulty: medium, time: 60min)
+Block BLK_002: filtered out (difficulty hard not in range for easy)
+Block BLK_003: PASSED all filters (theme: 'general', difficulty: easy, time: 20min)
+Block BLK_004: PASSED all filters (theme: 'journey', difficulty: medium, time: 90min)
+Block BLK_005: PASSED all filters (theme: 'journey, romantic', difficulty: medium, time: 30min)
+Block BLK_006: filtered out (location block in adventure mode)
+Block BLK_007: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_008: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_009: PASSED all filters (theme: 'general', difficulty: medium, time: 20min)
+Block BLK_010: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_011: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_012: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_013: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_014: filtered out (difficulty extreme not in range for easy)
+Block BLK_015: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_016: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_017: filtered out (difficulty hard not in range for easy)
+Block BLK_018: filtered out (difficulty hard not in range for easy)
+Block BLK_019: PASSED all filters (theme: 'general', difficulty: medium, time: 90min)
+Block BLK_020: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_021: filtered out (difficulty hard not in range for easy)
+Block BLK_022: filtered out (location block in adventure mode)
+Block BLK_023: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_024: filtered out (difficulty extreme not in range for easy)
+Block BLK_025: PASSED all filters (theme: 'general', difficulty: easy, time: 30min)
+Block BLK_026: PASSED all filters (theme: 'general', difficulty: medium, time: 30min)
+Block BLK_027: PASSED all filters (theme: 'general', difficulty: easy, time: 15min)
+Block BLK_028: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_029: PASSED all filters (theme: 'general', difficulty: medium, time: 10min)
+Block BLK_030: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_031: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_032: filtered out (difficulty hard not in range for easy)
+Block BLK_033: PASSED all filters (theme: 'general', difficulty: medium, time: 10min)
+Block BLK_034: PASSED all filters (theme: 'general', difficulty: medium, time: 5min)
+Block BLK_035: PASSED all filters (theme: 'general', difficulty: medium, time: 5min)
+Block BLK_036: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_037: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_038: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_039: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_040: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_041: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_042: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_043: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_044: filtered out (theme mismatch: block has 'romantic, virtuous', looking for 'adventure')
+Block BLK_045: filtered out (location block in adventure mode)
+Block BLK_046: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_047: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_048: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_049: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_050: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_051: PASSED all filters (theme: 'general', difficulty: medium, time: 60min)
+Block BLK_052: filtered out (difficulty hard not in range for easy)
+Block BLK_052: filtered out (difficulty hard not in range for easy)
+After filtering: 30 blocks remaining
+=== DEBUGGING CHUNK INITIALIZATION ===
+GOOGLE_MAPS_API_KEY available: true
+GEOAPIFY_API_KEY available: true
+Initializing chunk system...
+Registered chunk: Atlas Obscura Explorer (obscura)
+Registered chunk: Hiking Trail Explorer (hiking)
+GEOAPIFY_API_KEY found: true
+Registered chunk: Beach Explorer (beach)
+Beach chunk registered successfully
+Registered chunk: National Park Explorer (national_park)
+National Park chunk registered successfully
+Registered chunk: Wind Farm Explorer (wind_generator)
+Wind Generator chunk registered successfully
+Registered chunk: Mountain Explorer (mountain)
+Mountain chunk registered successfully
+Registered chunk: Lighthouse Explorer (lighthouse)
+Lighthouse chunk registered successfully
+Registered chunk: Pier Explorer (pier)
+Pier chunk registered successfully
+GOOGLE_MAPS_API_KEY found: true
+Registered chunk: Skateboard Park Explorer (skateboard_park)
+Skateboard Park chunk registered successfully
+Registered chunk: Google Hiking Area Explorer (google_hiking_area)
+Google Hiking Area chunk registered successfully
+Registered chunk: Google Beach Explorer (google_beach)
+Google Beach chunk registered successfully
+Registered chunk: Marina Explorer (google_marina)
+Google Marina chunk registered successfully
+Registered chunk: Observation Deck Explorer (google_observation_deck)
+Google Observation Deck chunk registered successfully
+Registered chunk: Psychic Reading Explorer (google_psychic)
+Google Psychic chunk registered successfully
+Registered chunk: Japanese Inn Explorer (google_japanese_inn)
+Google Japanese Inn chunk registered successfully
+Registered chunk: Cat Cafe Explorer (google_cat_cafe)
+Google Cat Cafe chunk registered successfully
+Registered chunk: Off-Roading Explorer (google_off_roading)
+Google Off-Roading chunk registered successfully
+Chunk system initialized: 17/17 chunks enabled
+Available chunk types: [
+  'obscura',
+  'hiking',
+  'beach',
+  'national_park',
+  'wind_generator',
+  'mountain',
+  'lighthouse',
+  'pier',
+  'skateboard_park',
+  'google_hiking_area',
+  'google_beach',
+  'google_marina',
+  'google_observation_deck',
+  'google_psychic',
+  'google_japanese_inn',
+  'google_cat_cafe',
+  'google_off_roading'
+]
+Chunk system initialized in QuestGenerator
+=== CHUNK STATS ===
+Total chunks: 17
+Enabled chunks: 17
+Chunk types: [
+  'obscura',
+  'hiking',
+  'beach',
+  'national_park',
+  'wind_generator',
+  'mountain',
+  'lighthouse',
+  'pier',
+  'skateboard_park',
+  'google_hiking_area',
+  'google_beach',
+  'google_marina',
+  'google_observation_deck',
+  'google_psychic',
+  'google_japanese_inn',
+  'google_cat_cafe',
+  'google_off_roading'
+]
+========================
+Fetching locations using unified chunk system...
+Current conditions for chunk selection: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Hiking Area Explorer (google_hiking_area)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Atlas Obscura Explorer (obscura)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Atlas Obscura Explorer (obscura)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Off-Roading Explorer (google_off_roading)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'evening',
+  state: 'FL',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Hiking Trail Explorer (hiking)
+Searching for hiking areas near 25.7617, -80.1918
+Google Places returned 20 hiking area locations
+Searching Atlas Obscura near coordinates: 25.7617, -80.1918
+Atlas Obscura search results: {
+  total: { value: 10000, relation: 'gte' },
+  per_page: 15,
+  current_page: 1,
+  location: '',
+  q: '',
+  coordinates: { lat: 25.7617, lng: -80.1918 },
+  results: [
+    {
+      title: 'Mary Brickell Park & Mausoleum',
+      subtitle: 'Amid the hustle and bustle of Miami’s Financial District sits a mausoleum-turned-monument.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/8KYzNRKDi-YYctgpV7o2rG7QDq0dhag2NQQFAmywc_8/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGMx/NzI0Mi00YjViLTQ3/NmItYTlhMC1iYjQx/MTM1Y2Y4NGJiYWIz/NDgwOTk0YzM1NmFi/ZjdfSU1HXzc0MTIu/anBn.jpg',
+      url: '/places/mary-brickell-park-mausoleum',
+      id: 57289,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '0.50'
+    },
+    {
+      title: 'Miami Circle',
+      subtitle: 'A perfect circle of 24 mysterious holes dates back to prehistoric times.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/iIM_W38lhR0B_yWxvftTkIU__znAiCSgI3JQr9WNceE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy90aGVj/aXJjbGU3Mi5qcGc.jpg',
+      url: '/places/miami-circle',
+      id: 1719,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '0.54'
+    },
+    {
+      title: 'Vizcaya Museum and Gardens',
+      subtitle: 'Former villa and estate of James Deering developed to preserve native tropical forests.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/pvLOL0hNytMhibjp7jlIXlN5VHcqmHDaICtxmeuqQDE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZTc3/YWM2MDZkZTQzOWI5/ZWI4ODk5NDk5NTE1/ZjBlMGE1YzE3ZmMw/LmpwZw.jpg',
+      url: '/places/vizcaya-museum-and-gardens',
+      id: 3029,
+      hide_from_maps: null,
+      coordinates: [Object],
+      distance_from_query: '1.61'
+    },
+    {
+      title: 'Miami Marine Stadium',
+      subtitle: 'An abandoned water sports stadium that has become a haven for graffiti and decay.',
+      location: 'Key Biscayne, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Zmf75xEX_ApL3VbyWbg2Sw2GtOQRPloF4FqmmL6IKaQ/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82OGU4/NjdhMTM0ZDYyNGU3/ZDhfMTAyODAwMjU2/MzZfOTE2N2MyYWU3/Y19iLmpwZw.jpg',
+      url: '/places/miami-marine-stadium',
+      id: 10126,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '1.76'
+    },
+    {
+      title: 'Bobblehead Museum',
+      subtitle: 'This extensive display of bobbleheads is a tribute to one of the most unique pieces of sports memorabilia.\r\n' +
+        '\r\n',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/4vUjStsRtlwveh5mEkPEF5ZugwWSZFDav0G1rMUT5Bw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lOTYw/M2Q0Mi1hMjNjLTRk/NWMtOGQ1Yi05MjRk/ZTcyYTNmNGQ5MDFh/YTI1ZmVjNDVjN2Rh/NDRfNTExMjg4MjY3/NzhfNGMxZDAxOGFm/ZV9rLmpwZw.jpg',
+      url: '/places/loandepot-park-bobblehead-museum',
+      id: 58076,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '2.06'
+    },
+    {
+      title: 'Miami City Cemetery',
+      subtitle: "Neglected resting place of some of the city's early luminaries—and a woman encased in concrete. ",
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/74YkFlsBlE-sfJxQrf86EQjlZ2UfkArPr92IKvWcDhc/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85N2Nm/MjI0Ni04NjBmLTQw/ZDMtOTIyMy0zODU5/OTAwYTI2Zjk3Y2Nh/NDliYzc5YzE5ZWYw/MTNfSU1HXzU2NDcg/Y29weS5KUEc.jpg',
+      url: '/places/miami-city-cemetery',
+      id: 26926,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '2.21'
+    },
+    {
+      title: 'Caballero Rivero Woodlawn Cemetery',
+      subtitle: 'This Miami cemetery holds the remains of two Cuban presidents, a Nicaraguan president, and the senior Desi Arnaz. And it was once the resting place of the crown prince of Spain. ',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/tONYkSWmLcSdxKKHIuET2VkHp4Ulij2bsh3o91gb_tE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wN2Zm/NzA0MS1jMDE3LTRk/ZmQtOGMwYS0yMDM5/ZTZhZTQ3NWRjYzc3/Y2RhMjg4ODI2ODkx/ZGJfSU1HXzk3MDIu/anBn.jpg',
+      url: '/places/caballero-rivero-woodlawn-cemetery-miami',
+      id: 52124,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.55'
+    },
+    {
+      title: "'Dollar a Gallon III'",
+      subtitle: 'This sculpture in the Miami Design District is one of the few public works of Virgil Abloh, an internationally recognized fashion designer  and creative.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/W_WPlGekwLVr6qJ_xVi3v_6rtebqGDejU3R_nXcDzs8/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ODBm/M2NmYS1mY2U1LTQ5/NzItOWRhMC1jYjM0/YjcwNWI1ZjdmNDRl/OTk2YjM5OTg4OTA3/NWRfMjAyNDAzMjRf/MTYyOTEzLUVESVQu/anBn.jpg',
+      url: '/places/dollar-a-gallon-iii-miami',
+      id: 58438,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.60'
+    },
+    {
+      title: 'The Wolfsonian-FIU',
+      subtitle: 'Over 120,000 curious objects that have shaped our modern world.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Awe_c-puDzKkzqhkl-jB2_1t0M5I9I08Z-7Qo-D87uM/rs:fill:200:200:1/g:ce/c:634:422:nowe:0:127/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YjFi/ZThiOWQ0YTMzNWE0/OWRkYWRkMzU3YjUx/ZjYyYldvbGZzb25p/YW5fRkwxLmpwZw.jpg',
+      url: '/places/wolfsonian-florida',
+      id: 4494,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.93'
+    },
+    {
+      title: 'World Erotic Art Museum',
+      subtitle: '12,000 sq. ft. museum tracing erotic art from antiquity to modern times.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/fPb2LnHI7u5BAQeN58r1GTA9cS93O41Lw9Jb0NsRJ5I/rs:fill:200:200:1/g:ce/c:600:400:nowe:596:6/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81NmMz/N2Y2NDBiYjhlZWI5/ZjY2NGM3ZmQ4MjE1/YTVlMjE3NTEyODY5/LmpwZw.jpg',
+      url: '/places/world-erotic-art-museum',
+      id: 2336,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.99'
+    },
+    {
+      title: 'The Rainbow Crosswalk',
+      subtitle: 'This Ocean Drive crosswalk has been paved in rainbow colors to honor the LGBTQ+ community and the man who brought pastel to Miami Beach.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/-auBhmVI_06OMuwMHlDjUMgNikygjPBs7RGEJtyTjrs/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMDRl/N2M3Ni1kZTdkLTRm/ZjEtOWM2NS04ZDE1/NWRiNTZkYTFhODhk/ZGFmODNiYzg0YTc4/NGVfMjAyNDAzMjFf/MTEzODM3LUVESVQt/RURJVC5qcGc.jpg',
+      url: '/places/rainbow-crosswalk-miami-beach',
+      id: 57629,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.10'
+    },
+    {
+      title: 'Burger Museum',
+      subtitle: 'This shrine to bovine consumption and all things fast food is a slice of culinary history both rare and well done.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/w7ZniNR3vlz0BIhSK1GT9BubpsGSPux7zLO3lTMjQoI/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNDZj/NDVkYi0wNjBlLTRk/YWItYTZiYi0yNDA1/N2VmMmFkODBiODhh/ODI0NzIxOGQ1NTFh/ZGFfSU1HXzM2ODMu/SlBH.jpg',
+      url: '/places/burger-museum',
+      id: 31882,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.19'
+    },
+    {
+      title: 'Crandon Park Zoo Ruins',
+      subtitle: 'It turns out that a hurricane-prone beach is probably not the best place to house wild animals. ',
+      location: 'Key Biscayne, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/E5eVGFzNq8QMtjVM26THWr4RzF-_mUskLmN0mxSUvhI/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kNjky/ZTgzMi01MjlhLTQz/NmItOTkyMy1lZDgy/ZGRhZTY5MDA1YjI4/MGZlODFkMWIyZjAy/ZDlfSU1HXzU0MzYg/Y29weS5KUEc.jpg',
+      url: '/places/crandon-park-zoo-ruins',
+      id: 26922,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.45'
+    },
+    {
+      title: 'The Kampong',
+      subtitle: 'This beautiful Miami garden was designed as a laboratory for tropical plants.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/MOewv_N4-Gci_-tPhUWVvKNVgWOcqLvOaT88BdTjNJU/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNWE0/OWY0Y2JjYWMzYTU5/ZmZfVGhlX0thbXBv/bmdfLV8wMDguanBn.jpg',
+      url: '/places/the-kampong-miami-florida',
+      id: 22239,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.86'
+    },
+    {
+      title: 'Miami Jai-Alai',
+      subtitle: `The timeworn "Yankee Stadium" of the fastest game in the world isn't going anywhere. `,
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/9E7GEJ1PoeoEOOlA4K8FtOCmcxwKU9YQ4EFhPDHBJXw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80M2Vi/YTE4Yy0wOTExLTQz/MDYtOWEyNi02OThj/ZmNjZGFlMGM4OTk5/NjVhNjExM2Q1YmRk/MmZfSU1HXzU1Mzkg/Y29weS5KUEc.jpg',
+      url: '/places/miami-jai-alai',
+      id: 26928,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '5.15'
+    }
+  ]
+}
+Type of searchResults: object
+Is array: false
+Found 5 Atlas Obscura locations
+Atlas location: 'Dollar a Gallon III', coords: 25.813813, -80.192687
+Atlas location: Crandon Park Zoo Ruins, coords: 25.705519, -80.156926
+Atlas location: Caballero Rivero Woodlawn Cemetery, coords: 25.764455, -80.248751
+Atlas location: Miami City Cemetery, coords: 25.793682, -80.192975
+Atlas location: Bobblehead Museum, coords: 25.778057, -80.219409
+Searching Atlas Obscura near coordinates: 25.7617, -80.1918
+Atlas Obscura search results: {
+  total: { value: 10000, relation: 'gte' },
+  per_page: 15,
+  current_page: 1,
+  location: '',
+  q: '',
+  coordinates: { lat: 25.7617, lng: -80.1918 },
+  results: [
+    {
+      title: 'Mary Brickell Park & Mausoleum',
+      subtitle: 'Amid the hustle and bustle of Miami’s Financial District sits a mausoleum-turned-monument.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/8KYzNRKDi-YYctgpV7o2rG7QDq0dhag2NQQFAmywc_8/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGMx/NzI0Mi00YjViLTQ3/NmItYTlhMC1iYjQx/MTM1Y2Y4NGJiYWIz/NDgwOTk0YzM1NmFi/ZjdfSU1HXzc0MTIu/anBn.jpg',
+      url: '/places/mary-brickell-park-mausoleum',
+      id: 57289,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '0.50'
+    },
+    {
+      title: 'Miami Circle',
+      subtitle: 'A perfect circle of 24 mysterious holes dates back to prehistoric times.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/iIM_W38lhR0B_yWxvftTkIU__znAiCSgI3JQr9WNceE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy90aGVj/aXJjbGU3Mi5qcGc.jpg',
+      url: '/places/miami-circle',
+      id: 1719,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '0.54'
+    },
+    {
+      title: 'Vizcaya Museum and Gardens',
+      subtitle: 'Former villa and estate of James Deering developed to preserve native tropical forests.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/pvLOL0hNytMhibjp7jlIXlN5VHcqmHDaICtxmeuqQDE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZTc3/YWM2MDZkZTQzOWI5/ZWI4ODk5NDk5NTE1/ZjBlMGE1YzE3ZmMw/LmpwZw.jpg',
+      url: '/places/vizcaya-museum-and-gardens',
+      id: 3029,
+      hide_from_maps: null,
+      coordinates: [Object],
+      distance_from_query: '1.61'
+    },
+    {
+      title: 'Miami Marine Stadium',
+      subtitle: 'An abandoned water sports stadium that has become a haven for graffiti and decay.',
+      location: 'Key Biscayne, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Zmf75xEX_ApL3VbyWbg2Sw2GtOQRPloF4FqmmL6IKaQ/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82OGU4/NjdhMTM0ZDYyNGU3/ZDhfMTAyODAwMjU2/MzZfOTE2N2MyYWU3/Y19iLmpwZw.jpg',
+      url: '/places/miami-marine-stadium',
+      id: 10126,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '1.76'
+    },
+    {
+      title: 'Bobblehead Museum',
+      subtitle: 'This extensive display of bobbleheads is a tribute to one of the most unique pieces of sports memorabilia.\r\n' +
+        '\r\n',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/4vUjStsRtlwveh5mEkPEF5ZugwWSZFDav0G1rMUT5Bw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lOTYw/M2Q0Mi1hMjNjLTRk/NWMtOGQ1Yi05MjRk/ZTcyYTNmNGQ5MDFh/YTI1ZmVjNDVjN2Rh/NDRfNTExMjg4MjY3/NzhfNGMxZDAxOGFm/ZV9rLmpwZw.jpg',
+      url: '/places/loandepot-park-bobblehead-museum',
+      id: 58076,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '2.06'
+    },
+    {
+      title: 'Miami City Cemetery',
+      subtitle: "Neglected resting place of some of the city's early luminaries—and a woman encased in concrete. ",
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/74YkFlsBlE-sfJxQrf86EQjlZ2UfkArPr92IKvWcDhc/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85N2Nm/MjI0Ni04NjBmLTQw/ZDMtOTIyMy0zODU5/OTAwYTI2Zjk3Y2Nh/NDliYzc5YzE5ZWYw/MTNfSU1HXzU2NDcg/Y29weS5KUEc.jpg',
+      url: '/places/miami-city-cemetery',
+      id: 26926,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '2.21'
+    },
+    {
+      title: 'Caballero Rivero Woodlawn Cemetery',
+      subtitle: 'This Miami cemetery holds the remains of two Cuban presidents, a Nicaraguan president, and the senior Desi Arnaz. And it was once the resting place of the crown prince of Spain. ',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/tONYkSWmLcSdxKKHIuET2VkHp4Ulij2bsh3o91gb_tE/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wN2Zm/NzA0MS1jMDE3LTRk/ZmQtOGMwYS0yMDM5/ZTZhZTQ3NWRjYzc3/Y2RhMjg4ODI2ODkx/ZGJfSU1HXzk3MDIu/anBn.jpg',
+      url: '/places/caballero-rivero-woodlawn-cemetery-miami',
+      id: 52124,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.55'
+    },
+    {
+      title: "'Dollar a Gallon III'",
+      subtitle: 'This sculpture in the Miami Design District is one of the few public works of Virgil Abloh, an internationally recognized fashion designer  and creative.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/W_WPlGekwLVr6qJ_xVi3v_6rtebqGDejU3R_nXcDzs8/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ODBm/M2NmYS1mY2U1LTQ5/NzItOWRhMC1jYjM0/YjcwNWI1ZjdmNDRl/OTk2YjM5OTg4OTA3/NWRfMjAyNDAzMjRf/MTYyOTEzLUVESVQu/anBn.jpg',
+      url: '/places/dollar-a-gallon-iii-miami',
+      id: 58438,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.60'
+    },
+    {
+      title: 'The Wolfsonian-FIU',
+      subtitle: 'Over 120,000 curious objects that have shaped our modern world.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Awe_c-puDzKkzqhkl-jB2_1t0M5I9I08Z-7Qo-D87uM/rs:fill:200:200:1/g:ce/c:634:422:nowe:0:127/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YjFi/ZThiOWQ0YTMzNWE0/OWRkYWRkMzU3YjUx/ZjYyYldvbGZzb25p/YW5fRkwxLmpwZw.jpg',
+      url: '/places/wolfsonian-florida',
+      id: 4494,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.93'
+    },
+    {
+      title: 'World Erotic Art Museum',
+      subtitle: '12,000 sq. ft. museum tracing erotic art from antiquity to modern times.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/fPb2LnHI7u5BAQeN58r1GTA9cS93O41Lw9Jb0NsRJ5I/rs:fill:200:200:1/g:ce/c:600:400:nowe:596:6/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81NmMz/N2Y2NDBiYjhlZWI5/ZjY2NGM3ZmQ4MjE1/YTVlMjE3NTEyODY5/LmpwZw.jpg',
+      url: '/places/world-erotic-art-museum',
+      id: 2336,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.99'
+    },
+    {
+      title: 'The Rainbow Crosswalk',
+      subtitle: 'This Ocean Drive crosswalk has been paved in rainbow colors to honor the LGBTQ+ community and the man who brought pastel to Miami Beach.',
+      location: 'Miami Beach, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/-auBhmVI_06OMuwMHlDjUMgNikygjPBs7RGEJtyTjrs/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMDRl/N2M3Ni1kZTdkLTRm/ZjEtOWM2NS04ZDE1/NWRiNTZkYTFhODhk/ZGFmODNiYzg0YTc4/NGVfMjAyNDAzMjFf/MTEzODM3LUVESVQt/RURJVC5qcGc.jpg',
+      url: '/places/rainbow-crosswalk-miami-beach',
+      id: 57629,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.10'
+    },
+    {
+      title: 'Burger Museum',
+      subtitle: 'This shrine to bovine consumption and all things fast food is a slice of culinary history both rare and well done.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/w7ZniNR3vlz0BIhSK1GT9BubpsGSPux7zLO3lTMjQoI/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNDZj/NDVkYi0wNjBlLTRk/YWItYTZiYi0yNDA1/N2VmMmFkODBiODhh/ODI0NzIxOGQ1NTFh/ZGFfSU1HXzM2ODMu/SlBH.jpg',
+      url: '/places/burger-museum',
+      id: 31882,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.19'
+    },
+    {
+      title: 'Crandon Park Zoo Ruins',
+      subtitle: 'It turns out that a hurricane-prone beach is probably not the best place to house wild animals. ',
+      location: 'Key Biscayne, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/E5eVGFzNq8QMtjVM26THWr4RzF-_mUskLmN0mxSUvhI/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kNjky/ZTgzMi01MjlhLTQz/NmItOTkyMy1lZDgy/ZGRhZTY5MDA1YjI4/MGZlODFkMWIyZjAy/ZDlfSU1HXzU0MzYg/Y29weS5KUEc.jpg',
+      url: '/places/crandon-park-zoo-ruins',
+      id: 26922,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.45'
+    },
+    {
+      title: 'The Kampong',
+      subtitle: 'This beautiful Miami garden was designed as a laboratory for tropical plants.',
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/MOewv_N4-Gci_-tPhUWVvKNVgWOcqLvOaT88BdTjNJU/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNWE0/OWY0Y2JjYWMzYTU5/ZmZfVGhlX0thbXBv/bmdfLV8wMDguanBn.jpg',
+      url: '/places/the-kampong-miami-florida',
+      id: 22239,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.86'
+    },
+    {
+      title: 'Miami Jai-Alai',
+      subtitle: `The timeworn "Yankee Stadium" of the fastest game in the world isn't going anywhere. `,
+      location: 'Miami, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/9E7GEJ1PoeoEOOlA4K8FtOCmcxwKU9YQ4EFhPDHBJXw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80M2Vi/YTE4Yy0wOTExLTQz/MDYtOWEyNi02OThj/ZmNjZGFlMGM4OTk5/NjVhNjExM2Q1YmRk/MmZfSU1HXzU1Mzkg/Y29weS5KUEc.jpg',
+      url: '/places/miami-jai-alai',
+      id: 26928,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '5.15'
+    }
+  ]
+}
+Type of searchResults: object
+Is array: false
+Found 5 Atlas Obscura locations
+Atlas location: Caballero Rivero Woodlawn Cemetery, coords: 25.764455, -80.248751
+Atlas location: Bobblehead Museum, coords: 25.778057, -80.219409
+Atlas location: Miami Marine Stadium, coords: 25.743573, -80.171979
+Atlas location: The Rainbow Crosswalk, coords: 25.782681, -80.130147
+Atlas location: Miami City Cemetery, coords: 25.793682, -80.192975
+Google Places returned 20 off-roading locations
+Querying OpenStreetMap for hiking trails...
+OSM Query radius (meters): 40234
+OSM Query: [out:json][timeout:30];
+      (
+        way["highway"="footway"](around:40234,25.7617,-80.1918);
+        way["highway"="path"](around:40234,25.7617,-80.1918);
+        way["highway"="cycleway"](around:40234,25.7617,-80.1918);
+        way["leisure"="park"](around:40234,25.7617,-80.1918);
+        way["leisure"="nature_reserve"](around:40234,25.7617,-80.1918);
+        relation["route"="hiking"](around:40234,25.7617,-80.1918);
+      );
+      out center meta;
+Overpass API returned 98575 elements
+Retrieved 5 locations from 5 chunk selections
+Fetched 5 locations using chunk system
+Chunk stats: 17/17 enabled, last used: hiking
+Using google_hiking_area chunk - Pine Island Ridge Natural Area
+Using hiking chunk - Nature Path
+Using google_off_roading chunk - Takeovers Atv Rentals
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753312039886_0',
+      description: 'Sing from song database at location at Pine Island Ridge Natural Area',
+      totalTime: 15,
+      difficulty: 'medium',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753312039887_1',
+      description: 'Visit Art Museum like in Ferris Bueller at Nature Path',
+      totalTime: 90,
+      difficulty: 'medium',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753312039887_2',
+      description: 'Buy a replica sword from mall shop at Takeovers Atv Rentals',
+      totalTime: 60,
+      difficulty: 'medium',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 30
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 2 of 3 for enhancement
+Using trail location: Nature Path
+Quest enhanced by Gemini: quest_1753312043623_h8m57xsbm
+Stored quest quest_1753312043623_h8m57xsbm. Total quests in storage: 22
+ POST /api/enhance-quest 200 in 30897ms
+ GET / 200 in 193ms
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 28.406811937487888,
+    longitude: -81.51166747736826,
+    accuracy: 35
+  }
+}
+About to call questGenerator.generateQuests...
+Filtering 53 blocks with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 28.406811937487888,
+    longitude: -81.51166747736826,
+    accuracy: 35
+  }
+}
+Block BLK_001: PASSED all filters (theme: 'general', difficulty: medium, time: 60min)
+Block BLK_002: PASSED all filters (theme: 'journey', difficulty: hard, time: 45min)
+Block BLK_003: PASSED all filters (theme: 'general', difficulty: easy, time: 20min)
+Block BLK_004: PASSED all filters (theme: 'journey', difficulty: medium, time: 90min)
+Block BLK_005: PASSED all filters (theme: 'journey, romantic', difficulty: medium, time: 30min)
+Block BLK_006: filtered out (location block in adventure mode)
+Block BLK_007: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_008: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_009: PASSED all filters (theme: 'general', difficulty: medium, time: 20min)
+Block BLK_010: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_011: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_012: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_013: filtered out (theme mismatch: block has 'romantic', looking for 'adventure')
+Block BLK_014: filtered out (difficulty extreme not in range for medium)
+Block BLK_015: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_016: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_017: PASSED all filters (theme: 'general', difficulty: hard, time: 30min)
+Block BLK_018: PASSED all filters (theme: 'general', difficulty: hard, time: 120min)
+Block BLK_019: PASSED all filters (theme: 'general', difficulty: medium, time: 90min)
+Block BLK_020: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_021: filtered out (theme mismatch: block has 'life_changing', looking for 'adventure')
+Block BLK_022: filtered out (location block in adventure mode)
+Block BLK_023: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_024: filtered out (difficulty extreme not in range for medium)
+Block BLK_025: PASSED all filters (theme: 'general', difficulty: easy, time: 30min)
+Block BLK_026: PASSED all filters (theme: 'general', difficulty: medium, time: 30min)
+Block BLK_027: PASSED all filters (theme: 'general', difficulty: easy, time: 15min)
+Block BLK_028: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_029: PASSED all filters (theme: 'general', difficulty: medium, time: 10min)
+Block BLK_030: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_031: PASSED all filters (theme: 'general', difficulty: medium, time: 15min)
+Block BLK_032: PASSED all filters (theme: 'general', difficulty: hard, time: 10min)
+Block BLK_033: PASSED all filters (theme: 'general', difficulty: medium, time: 10min)
+Block BLK_034: PASSED all filters (theme: 'general', difficulty: medium, time: 5min)
+Block BLK_035: PASSED all filters (theme: 'general', difficulty: medium, time: 5min)
+Block BLK_036: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_037: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_038: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_039: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_040: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_041: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_042: PASSED all filters (theme: 'journey', difficulty: medium, time: 60min)
+Block BLK_043: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_044: filtered out (theme mismatch: block has 'romantic, virtuous', looking for 'adventure')
+Block BLK_045: filtered out (location block in adventure mode)
+Block BLK_046: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_047: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_048: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_049: filtered out (theme mismatch: block has 'virtuous', looking for 'adventure')
+Block BLK_050: PASSED all filters (theme: 'general', difficulty: medium, time: 45min)
+Block BLK_051: PASSED all filters (theme: 'general', difficulty: medium, time: 60min)
+Block BLK_052: PASSED all filters (theme: 'general', difficulty: hard, time: 10min)
+Block BLK_052: PASSED all filters (theme: 'general', difficulty: hard, time: 10min)
+After filtering: 36 blocks remaining
+Fetching locations using unified chunk system...
+Current conditions for chunk selection: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Hiking Trail Explorer (hiking)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Hiking Trail Explorer (hiking)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Mountain Explorer (mountain)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Querying OpenStreetMap for hiking trails...
+OSM Query radius (meters): 40234
+OSM Query: [out:json][timeout:30];
+      (
+        way["highway"="footway"](around:40234,28.406811937487888,-81.51166747736826);
+        way["highway"="path"](around:40234,28.406811937487888,-81.51166747736826);
+        way["highway"="cycleway"](around:40234,28.406811937487888,-81.51166747736826);
+        way["leisure"="park"](around:40234,28.406811937487888,-81.51166747736826);
+        way["leisure"="nature_reserve"](around:40234,28.406811937487888,-81.51166747736826);
+        relation["route"="hiking"](around:40234,28.406811937487888,-81.51166747736826);
+      );
+      out center meta;
+Overpass API returned 53472 elements
+Querying OpenStreetMap for hiking trails...
+OSM Query radius (meters): 40234
+OSM Query: [out:json][timeout:30];
+      (
+        way["highway"="footway"](around:40234,28.406811937487888,-81.51166747736826);
+        way["highway"="path"](around:40234,28.406811937487888,-81.51166747736826);
+        way["highway"="cycleway"](around:40234,28.406811937487888,-81.51166747736826);
+        way["leisure"="park"](around:40234,28.406811937487888,-81.51166747736826);
+        way["leisure"="nature_reserve"](around:40234,28.406811937487888,-81.51166747736826);
+        relation["route"="hiking"](around:40234,28.406811937487888,-81.51166747736826);
+      );
+      out center meta;
+ POST /api/enhance-quest 200 in 22936ms
+Overpass API returned 53472 elements
+Searching for mountains near 28.406811937487888, -81.51166747736826
+GeoApify Mountain URL: https://api.geoapify.com/v2/places?categories=natural.mountain&filter=circle%3A-81.51166747736826%2C28.406811937487888%2C40233.5&bias=proximity%3A-81.51166747736826%2C28.406811937487888&limit=5&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 5 mountain locations
+Found 5 mountain locations
+Searching for lighthouses near 28.406811937487888, -81.51166747736826
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51166747736826%2C28.406811937487888%2C40233.5&bias=proximity%3A-81.51166747736826%2C28.406811937487888&limit=5&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Searching for lighthouses near 28.406811937487888, -81.51166747736826
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51166747736826%2C28.406811937487888%2C40233.5&bias=proximity%3A-81.51166747736826%2C28.406811937487888&limit=5&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Retrieved 5 locations from 5 chunk selections
+Fetched 5 locations using chunk system
+Chunk stats: 17/17 enabled, last used: lighthouse
+Using lighthouse chunk - Historic Lighthouse
+Using mountain chunk - Mountain Peak
+Using hiking chunk - Chippewa Trail Connector
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753323655945_0',
+      description: 'Get pistachio ice cream at Historic Lighthouse',
+      totalTime: 20,
+      difficulty: 'easy',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753323655945_1',
+      description: "Learn to solve Rubik's cube at Mountain Peak",
+      totalTime: 90,
+      difficulty: 'medium',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753323655945_2',
+      description: 'Eat at Georgian restaurant at Chippewa Trail Connector',
+      totalTime: 60,
+      difficulty: 'medium',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 36
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 1 of 3 for enhancement
+Using trail location: Historic Lighthouse
+Quest enhanced by Gemini: quest_1753323659122_tlja4p0uc
+Stored quest quest_1753323659122_tlja4p0uc. Total quests in storage: 23
+ GET / 200 in 87ms
+ ✓ Compiled in 110ms
+ ✓ Compiled in 35ms
+ ✓ Compiled in 36ms
+ ✓ Compiled in 31ms
+ GET / 200 in 258ms
+ ✓ Compiled in 165ms
+ GET / 200 in 105ms
+ ✓ Compiled /favicon.ico in 371ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 633ms
+Loaded 24 active quests from disk
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 28.406810264180308,
+    longitude: -81.51165416961263,
+    accuracy: 35
+  }
+}
+About to call questGenerator.generateQuests...
+Generating quests for adventure mode
+=== DEBUGGING CHUNK INITIALIZATION ===
+GOOGLE_MAPS_API_KEY available: true
+GEOAPIFY_API_KEY available: true
+Initializing chunk system...
+Registered chunk: Atlas Obscura Explorer (obscura)
+Registered chunk: Hiking Trail Explorer (hiking)
+GEOAPIFY_API_KEY found: true
+Registered chunk: Beach Explorer (beach)
+Beach chunk registered successfully
+Registered chunk: National Park Explorer (national_park)
+National Park chunk registered successfully
+Registered chunk: Wind Farm Explorer (wind_generator)
+Wind Generator chunk registered successfully
+Registered chunk: Mountain Explorer (mountain)
+Mountain chunk registered successfully
+Registered chunk: Lighthouse Explorer (lighthouse)
+Lighthouse chunk registered successfully
+Registered chunk: Pier Explorer (pier)
+Pier chunk registered successfully
+GOOGLE_MAPS_API_KEY found: true
+Registered chunk: Skateboard Park Explorer (skateboard_park)
+Skateboard Park chunk registered successfully
+Registered chunk: Google Hiking Area Explorer (google_hiking_area)
+Google Hiking Area chunk registered successfully
+Registered chunk: Google Beach Explorer (google_beach)
+Google Beach chunk registered successfully
+Registered chunk: Marina Explorer (google_marina)
+Google Marina chunk registered successfully
+Registered chunk: Observation Deck Explorer (google_observation_deck)
+Google Observation Deck chunk registered successfully
+Registered chunk: Psychic Reading Explorer (google_psychic)
+Google Psychic chunk registered successfully
+Registered chunk: Japanese Inn Explorer (google_japanese_inn)
+Google Japanese Inn chunk registered successfully
+Registered chunk: Cat Cafe Explorer (google_cat_cafe)
+Google Cat Cafe chunk registered successfully
+Registered chunk: Off-Roading Explorer (google_off_roading)
+Google Off-Roading chunk registered successfully
+Chunk system initialized: 17/17 chunks enabled
+Available chunk types: [
+  'obscura',
+  'hiking',
+  'beach',
+  'national_park',
+  'wind_generator',
+  'mountain',
+  'lighthouse',
+  'pier',
+  'skateboard_park',
+  'google_hiking_area',
+  'google_beach',
+  'google_marina',
+  'google_observation_deck',
+  'google_psychic',
+  'google_japanese_inn',
+  'google_cat_cafe',
+  'google_off_roading'
+]
+Chunk system initialized in QuestGenerator
+=== CHUNK STATS ===
+Total chunks: 17
+Enabled chunks: 17
+Chunk types: [
+  'obscura',
+  'hiking',
+  'beach',
+  'national_park',
+  'wind_generator',
+  'mountain',
+  'lighthouse',
+  'pier',
+  'skateboard_park',
+  'google_hiking_area',
+  'google_beach',
+  'google_marina',
+  'google_observation_deck',
+  'google_psychic',
+  'google_japanese_inn',
+  'google_cat_cafe',
+  'google_off_roading'
+]
+========================
+Generating adventure mode quests using only chunks...
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Observation Deck Explorer (google_observation_deck)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Hiking Area Explorer (google_hiking_area)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: National Park Explorer (national_park)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Atlas Obscura Explorer (obscura)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Observation Deck Explorer (google_observation_deck)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: National Park Explorer (national_park)
+Searching for hiking areas near 28.406810264180308, -81.51165416961263
+Error searching for hiking areas: TypeError: fetch failed
+    at async GoogleHikingAreaChunk.searchLocations (src/lib/chunks/GoogleHikingAreaChunk.ts:70:23)
+    at async GoogleHikingAreaChunk.getRandomLocation (src/lib/chunks/BaseChunk.ts:87:19)
+    at async ChunkManager.getRandomLocations (src/lib/chunks/ChunkManager.ts:134:25)
+    at async QuestGenerator.generateAdventureModeQuests (src/lib/questGenerator.ts:338:23)
+    at async QuestGenerator.generateQuests (src/lib/questGenerator.ts:294:15)
+    at async POST (src/app/api/enhance-quest/route.ts:38:25)
+  68 |       console.log(`Searching for hiking areas near ${params.latitude}, ${params.longitude}`);
+  69 |
+> 70 |       const response = await fetch(url.toString());
+     |                       ^
+  71 |       const data: GooglePlacesResponse = await response.json();
+  72 |       
+  73 |       console.log(`Google Places returned ${data.results?.length || 0} hiking area locations`); {
+  [cause]: [Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 2607:f8b0:4002:c06::5f:443, timeout: 10000ms)] {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+Searching for national parks near 28.406810264180308, -81.51165416961263
+GeoApify National Park URL: https://api.geoapify.com/v2/places?categories=national_park&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+Error searching for national parks: TypeError: fetch failed
+    at async NationalParkChunk.searchLocations (src/lib/chunks/NationalParkChunk.ts:81:23)
+    at async NationalParkChunk.getRandomLocation (src/lib/chunks/BaseChunk.ts:87:19)
+    at async ChunkManager.getRandomLocations (src/lib/chunks/ChunkManager.ts:134:25)
+    at async QuestGenerator.generateAdventureModeQuests (src/lib/questGenerator.ts:338:23)
+    at async QuestGenerator.generateQuests (src/lib/questGenerator.ts:294:15)
+    at async POST (src/app/api/enhance-quest/route.ts:38:25)
+  79 |       console.log('GeoApify National Park URL:', url.toString());
+  80 |
+> 81 |       const response = await fetch(url.toString(), {
+     |                       ^
+  82 |         method: 'GET',
+  83 |         headers: {
+  84 |           'User-Agent': 'SIDEQUEST/1.0' {
+  [cause]: [Error [ConnectTimeoutError]: Connect Timeout Error (attempted addresses: 2606:4700:10::ac42:9d04:443, timeout: 10000ms)] {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+Searching Atlas Obscura near coordinates: 28.406810264180308, -81.51165416961263
+ GET / 200 in 76ms
+ POST /api/enhance-quest 200 in 83882ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 229ms
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 28.406810264180308,
+    longitude: -81.51165416961263,
+    accuracy: 35
+  }
+}
+About to call questGenerator.generateQuests...
+Generating quests for adventure mode
+Generating adventure mode quests using only chunks...
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Beach Explorer (google_beach)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Wind Farm Explorer (wind_generator)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Beach Explorer (google_beach)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Mountain Explorer (mountain)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Marina Explorer (google_marina)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Mountain Explorer (mountain)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Off-Roading Explorer (google_off_roading)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Hiking Area Explorer (google_hiking_area)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Google Hiking Area Explorer (google_hiking_area)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: National Park Explorer (national_park)
+Google Places returned 4 beach locations
+Searching for wind generators near 28.406810264180308, -81.51165416961263
+GeoApify Wind Generator URL: https://api.geoapify.com/v2/places?categories=power.generator.wind&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 0 wind generator locations
+Google Places returned 4 beach locations
+Searching for mountains near 28.406810264180308, -81.51165416961263
+GeoApify Mountain URL: https://api.geoapify.com/v2/places?categories=natural.mountain&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 10 mountain locations
+Found 10 mountain locations
+Google Places returned 19 marina locations
+Searching for mountains near 28.406810264180308, -81.51165416961263
+GeoApify Mountain URL: https://api.geoapify.com/v2/places?categories=natural.mountain&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 10 mountain locations
+Found 10 mountain locations
+Google Places returned 18 off-roading locations
+Searching for hiking areas near 28.406810264180308, -81.51165416961263
+Google Places returned 20 hiking area locations
+Searching for hiking areas near 28.406810264180308, -81.51165416961263
+Google Places returned 20 hiking area locations
+Searching for national parks near 28.406810264180308, -81.51165416961263
+GeoApify National Park URL: https://api.geoapify.com/v2/places?categories=national_park&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+[Error [FetchError]: request to https://www.atlasobscura.com/search?utf8=%E2%9C%93&q=&location=&nearby=true&lat=28.406810264180308&lng=-81.51165416961263&page=1 failed, reason: read ETIMEDOUT] {
+  type: 'system',
+  errno: 'ETIMEDOUT',
+  code: 'ETIMEDOUT',
+  constructor: [Function: FetchError]
+}
+Atlas Obscura search results: null
+Type of searchResults: object
+Is array: false
+No valid search results returned
+Searching for lighthouses near 28.406810264180308, -81.51165416961263
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Google Places returned 11 observation deck locations
+Searching for lighthouses near 28.406810264180308, -81.51165416961263
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Searching for lighthouses near 28.406810264180308, -81.51165416961263
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Searching for lighthouses near 28.406810264180308, -81.51165416961263
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Searching for national parks near 28.406810264180308, -81.51165416961263
+GeoApify National Park URL: https://api.geoapify.com/v2/places?categories=national_park&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 0 national park locations
+Retrieved 8 locations from 10 chunk selections
+Fetched 8 adventure locations
+Creating adventure quest for: Clementine's Beach
+Creating adventure quest for: Lakefront Beach
+Creating adventure quest for: Mountain Peak
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753325321315_0',
+      description: "Explore Clementine's Beach",
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325321316_1',
+      description: 'Explore Lakefront Beach',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325321316_2',
+      description: 'Explore Mountain Peak',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 8
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 1 of 3 for enhancement
+Using trail location: Clementine's Beach
+Quest enhanced by Gemini: quest_1753325324699_jp1x273vn
+Stored quest quest_1753325324699_jp1x273vn. Total quests in storage: 25
+ POST /api/enhance-quest 200 in 38452ms
+GeoApify returned 0 national park locations
+Retrieved 5 locations from 10 chunk selections
+Fetched 5 adventure locations
+Creating adventure quest for: Historic Lighthouse
+Creating adventure quest for: Lake Apopka Loop Observation Tower
+Creating adventure quest for: Historic Lighthouse
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753325324990_0',
+      description: 'Explore Historic Lighthouse',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325324990_1',
+      description: 'Explore Lake Apopka Loop Observation Tower',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325324990_2',
+      description: 'Explore Historic Lighthouse',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 5
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 2 of 3 for enhancement
+ ✓ Compiled /quest/[id] in 407ms
+ GET /quest/quest_1753325324699_jp1x273vn 200 in 795ms
+ ✓ Compiled /api/quest/[id] in 183ms
+Loaded 25 active quests from disk
+Looking for quest quest_1753325324699_jp1x273vn. Total quests in storage: 25
+Found quest quest_1753325324699_jp1x273vn
+ GET /api/quest/quest_1753325324699_jp1x273vn 200 in 392ms
+Looking for quest quest_1753325324699_jp1x273vn. Total quests in storage: 25
+Found quest quest_1753325324699_jp1x273vn
+ GET /api/quest/quest_1753325324699_jp1x273vn 200 in 17ms
+ ✓ Compiled /api/directions in 52ms
+ GET /api/directions 200 in 68ms
+ GET /api/directions 200 in 14ms
+Calculating directions from 28.406810264180308,-81.51165416961263 to Clementine's Beach
+Calculating directions from 28.406810264180308,-81.51165416961263 to Clementine's Beach
+Loaded 25 active quests from disk
+ POST /api/directions 200 in 245ms
+ POST /api/directions 200 in 310ms
+Using trail location: Lake Apopka Loop Observation Tower
+Quest enhanced by Gemini: quest_1753325329209_hxovwarr6
+Stored quest quest_1753325329209_hxovwarr6. Total quests in storage: 26
+ GET / 200 in 97ms
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'wildcard',
+  location: {
+    latitude: 28.406810264180308,
+    longitude: -81.51165416961263,
+    accuracy: 35
+  }
+}
+About to call questGenerator.generateQuests...
+Generating quests for wildcard mode
+Generating wildcard mode quests using blocks/seeds...
+Filtering 52 blocks with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'wildcard',
+  location: {
+    latitude: 28.406810264180308,
+    longitude: -81.51165416961263,
+    accuracy: 35
+  }
+}
+Block BLK_001: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_002: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_003: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_017: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_019: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_020: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_023: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_026: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_027: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_029: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_030: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_031: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_032: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_033: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_034: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block BLK_035: filtered out (theme mismatch: block has 'wild_card', looking for 'wildcard')
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_049: PASSED all filters (theme: 'virtuous', difficulty: easy, time: 15min)
+Block : PASSED all filters (theme: 'general', difficulty: easy, time: 0min)
+Block BLK_051: PASSED all filters (theme: 'general', difficulty: medium, time: 60min)
+Block BLK_052: PASSED all filters (theme: 'general', difficulty: hard, time: 10min)
+After filtering: 35 blocks remaining
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Selected chunk: Psychic Reading Explorer (google_psychic)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Selected chunk: Pier Explorer (pier)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Selected chunk: Psychic Reading Explorer (google_psychic)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Selected chunk: Skateboard Park Explorer (skateboard_park)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'wildcard'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=false, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=false, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=true, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=false, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=false, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=false, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=false, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=false, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=false, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=false, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=false, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=true, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=false, modes=adventure
+Found 6 available chunks
+Selected chunk: Pier Explorer (pier)
+Google Places returned 20 psychic reading locations
+Searching for piers near 28.406810264180308, -81.51165416961263
+GeoApify Pier URL: https://api.geoapify.com/v2/places?categories=man_made.pier&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=5&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 5 pier locations
+Found 5 pier locations
+Google Places returned 20 psychic reading locations
+Searching for skateboard parks near 28.406810264180308, -81.51165416961263
+Google Places Skateboard Park URL: https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=28.406810264180308%2C-81.51165416961263&radius=40233.5&keyword=skateboard+park&key=AIzaSyBDEtZUCRa7J5YfWl-uGyVpAPTTD--7FLQ
+Google Places returned status: OK
+Google Places returned 20 skateboard park locations
+Found 5 skateboard park locations
+Searching for piers near 28.406810264180308, -81.51165416961263
+GeoApify Pier URL: https://api.geoapify.com/v2/places?categories=man_made.pier&filter=circle%3A-81.51165416961263%2C28.406810264180308%2C40233.5&bias=proximity%3A-81.51165416961263%2C28.406810264180308&limit=5&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 5 pier locations
+Found 5 pier locations
+Retrieved 5 locations from 5 chunk selections
+Fetched 5 wildcard locations
+Using pier chunk for wildcard - Waterfront Pier
+Using skateboard_park chunk for wildcard - Minneola Trailhead Park
+Using google_psychic chunk for wildcard - Astrologer psychic reading
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753325525807_0',
+      description: ' at Waterfront Pier',
+      totalTime: 0,
+      difficulty: 'easy',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325525808_1',
+      description: ' at Minneola Trailhead Park',
+      totalTime: 0,
+      difficulty: 'easy',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325525808_2',
+      description: ' at Astrologer psychic reading',
+      totalTime: 0,
+      difficulty: 'easy',
+      blocks: [Array],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 35,
+  error: undefined
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 1 of 3 for enhancement
+Using trail location: Waterfront Pier
+Quest enhanced by Gemini: quest_1753325529388_41tsg8ky1
+Stored quest quest_1753325529388_41tsg8ky1. Total quests in storage: 27
+ POST /api/enhance-quest 200 in 9088ms
+ GET /quest/quest_1753325529388_41tsg8ky1 200 in 85ms
+Looking for quest quest_1753325529388_41tsg8ky1. Total quests in storage: 27
+Found quest quest_1753325529388_41tsg8ky1
+ GET /api/quest/quest_1753325529388_41tsg8ky1 200 in 23ms
+Looking for quest quest_1753325529388_41tsg8ky1. Total quests in storage: 27
+Found quest quest_1753325529388_41tsg8ky1
+ GET /api/quest/quest_1753325529388_41tsg8ky1 200 in 22ms
+ GET /api/directions 200 in 26ms
+ GET /api/directions 200 in 19ms
+Loaded 27 active quests from disk
+ ✓ Compiled in 166ms
+ ✓ Compiled in 35ms
+ ✓ Compiled in 29ms
+ ✓ Compiled in 33ms
+ ✓ Compiled in 74ms
+Enhancing quest with input: {
+  timeframe: 'afternoon',
+  difficulty: 'medium',
+  transportation: 'has_car',
+  theme: 'adventure',
+  location: {
+    latitude: 28.406814917708747,
+    longitude: -81.51164292196019,
+    accuracy: 35
+  }
+}
+About to call questGenerator.generateQuests...
+Generating quests for adventure mode
+Generating adventure mode quests using only chunks...
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Wind Farm Explorer (wind_generator)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Atlas Obscura Explorer (obscura)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Off-Roading Explorer (google_off_roading)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Marina Explorer (google_marina)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Lighthouse Explorer (lighthouse)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Off-Roading Explorer (google_off_roading)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Hiking Trail Explorer (hiking)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Observation Deck Explorer (google_observation_deck)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: National Park Explorer (national_park)
+Checking 17 chunks for availability with conditions: {
+  season: 'summer',
+  weather: 'any',
+  timeOfDay: 'night',
+  state: 'unknown',
+  mode: 'adventure'
+}
+Chunk Atlas Obscura Explorer: available=true, canActivate=true, modes=adventure
+Chunk Hiking Trail Explorer: available=true, canActivate=true, modes=adventure
+Chunk Beach Explorer: available=true, canActivate=false, modes=wildcard
+Chunk National Park Explorer: available=true, canActivate=true, modes=adventure
+Chunk Wind Farm Explorer: available=true, canActivate=true, modes=adventure
+Chunk Mountain Explorer: available=true, canActivate=true, modes=adventure
+Chunk Lighthouse Explorer: available=true, canActivate=true, modes=adventure
+Chunk Pier Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Skateboard Park Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Google Hiking Area Explorer: available=true, canActivate=true, modes=adventure
+Chunk Google Beach Explorer: available=true, canActivate=true, modes=adventure
+Chunk Marina Explorer: available=true, canActivate=true, modes=adventure
+Chunk Observation Deck Explorer: available=true, canActivate=true, modes=adventure
+Chunk Psychic Reading Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Japanese Inn Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Cat Cafe Explorer: available=true, canActivate=false, modes=wildcard
+Chunk Off-Roading Explorer: available=true, canActivate=true, modes=adventure
+Found 11 available chunks
+Selected chunk: Wind Farm Explorer (wind_generator)
+Searching for wind generators near 28.406814917708747, -81.51164292196019
+GeoApify Wind Generator URL: https://api.geoapify.com/v2/places?categories=power.generator.wind&filter=circle%3A-81.51164292196019%2C28.406814917708747%2C40233.5&bias=proximity%3A-81.51164292196019%2C28.406814917708747&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 0 wind generator locations
+Searching Atlas Obscura near coordinates: 28.406814917708747, -81.51164292196019
+Atlas Obscura search results: {
+  total: { value: 10000, relation: 'gte' },
+  per_page: 15,
+  current_page: 1,
+  location: '',
+  q: '',
+  coordinates: { lat: 28.406814917708747, lng: -81.51164292196019 },
+  results: [
+    {
+      title: 'River Country',
+      subtitle: "Disney World's very first waterpark is now an abandoned ruin being reclaimed by the swamp.",
+      location: 'Lake Buena Vista, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/5AFSHwzJXz69X2ARCeDB4UrPuPusOj7IRjBsbuvfkTM/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82OWI2/M2EzNzExN2FhNmZh/NTNfODAwcHgtQWJh/bmRvbmVkX1JpdmVy/X0NvdW50cnkuanBn.jpg',
+      url: '/places/river-county',
+      id: 15235,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.13'
+    },
+    {
+      title: 'Discovery Island',
+      subtitle: "Disney's abandoned animal island is now an overgrown ruin that was almost the coolest attraction ever.",
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Yl1N5wwUIcsgI7Zy0cLu1HKNIWAtD97DlGO_SuZRnQ0/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iYTJi/MzllNC02MTM4LTQw/ZjktYWQ0YS1jMjVl/NDE0ZWM3NmQyNjAy/N2NiNDlhNTNlNzYw/YWJfRGlzY292ZXJ5/X0lzbGFuZF8oMTQ1/ODY2NjYzNDIpLmpw/Zw.jpg',
+      url: '/places/discovery-island',
+      id: 10538,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.36'
+    },
+    {
+      title: 'Skeletons: Museum of Osteology',
+      subtitle: 'Hundreds of skulls and bones at the largest skeleton museum in the country. ',
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/Gg-RnzvbiRn8bRWfjjqB3jSANKC5XdqYOQS6hb7SirY/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hYmJl/NjBiNDQ3YmUzYWZk/ODRfU2tlbGV0b25z/X011c2V1bTkuanBn.jpg',
+      url: '/places/skeletons-museum-of-osteology',
+      id: 21534,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.58'
+    },
+    {
+      title: '"Singing Runway" at the Abandoned Disney World Airport',
+      subtitle: 'The only runway directly into the magic kingdom has been closed since 1972, but it still sings to you if you drive fast enough.',
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/8aoR-LCz9aJTCHBK5Qu8QvHD-J3Ni0Cog33UlQYEVZ0/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zdmRl/YmZvejdwamhlanho/OGEyOGIzOTU0ZDVj/NzZlZjZhX3VybC5q/cGc.jpg',
+      url: '/places/singing-runway-at-the-abandoned-disney-world-airport',
+      id: 16961,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '3.65'
+    },
+    {
+      title: 'Progress City Model',
+      subtitle: `A glimpse at Walt Disney's vision for a "community of tomorrow," in miniature.`,
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/z6D8LvJIpJhwZYJyrYWeTa_2nbUb_iwaj8QJJta0oT8/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMjJi/ZThkMy04MjI3LTQ3/ZGUtODZhZi1lNmI3/MjZhMGU1MjMxODU2/MWRhMzJmZWE5M2Fm/NWNfNjI1OTg1NjA5/OV9iODIyYjViNWQx/X2suanBn.jpg',
+      url: '/places/progress-city-model',
+      id: 45990,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '4.17'
+    },
+    {
+      title: 'Splendid China',
+      subtitle: 'Once featuring over 60 miniature replicas of famous Chinese locations, the Splendid China theme park was completely abandoned and is now mostly rubble.',
+      location: 'Kissimmee, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/atsF-_9VtnSKDXLILB2MOCOxC25GcswKOJ-kBPuz_1E/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hMWIw/YzRhMjdhNTI2MDJh/NDZfc2M3LnBuZw.png',
+      url: '/places/splendid-china-orlando',
+      id: 8350,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '7.45'
+    },
+    {
+      title: 'The Holy Land Experience',
+      subtitle: 'A mega theme park-wax museum mélange containing all things biblical.',
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/OnAdzU6zm0M3fGS80CeD_J392AWGzEzlEkawUihnKpg/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kMjIx/Yjg3M2MzNGU1MzM5/OTNfNTE3OTkxMzcx/XzAzMDM1NjU1ZGZf/Yi5qcGc.jpg',
+      url: '/places/the-holy-land-experience-orlando-florida',
+      id: 13706,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '7.81'
+    },
+    {
+      title: 'Tupperware Confidence Center',
+      subtitle: 'A museum preserving one company’s history of preserving food.',
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/glcHgyaomUzm30igE5gYPIc3wClL0Ugb44iruWYAejo/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kNzFk/YTQ5Mi1kZjQ1LTQ3/MzktYmFlYi05NmJk/ZjBmODhmZjFkZjhk/YmI4ZDQ5OGI1OWYy/MzRfMDA0LkpQRw.jpg',
+      url: '/places/tupperware-confidence-center',
+      id: 28441,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '7.85'
+    },
+    {
+      title: 'Mickey Pylon',
+      subtitle: "Electrical pylon in the shape of Disney's beloved mouse.",
+      location: 'Celebration, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/oZKBMGFSPgMommFlUSGW44c7MyAADS8D1ia0zKOSnN0/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mYzFi/OTBlMWM5Mjk5ZjE5/MjJlODVkMDIzOTVi/NmYzYjVkMDg0MDQz/LmpwZw.jpg',
+      url: '/places/mickey-pylon',
+      id: 2455,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '8.07'
+    },
+    {
+      title: "Bob Ross's Grave",
+      subtitle: "Loyal fans of one television's most famous painters still come to pay their respects.",
+      location: 'Gotha, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/9-Em-HjQZtYKvzmVTdyy5YDcXwvLZz6Ft0W-p0qjGuw/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80N2M3/MmI0ZS1jYTdlLTQ2/MTgtYWNkMC1jODky/NmUyMTU0YjkyYzBi/YmUxMDc3ZTcxOTJl/ODBfSU1HXzIwMjEw/MjA0XzEzMzI1MzE3/M19IRFIuanBn.jpg',
+      url: '/places/bob-ross-grave',
+      id: 48216,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '9.07'
+    },
+    {
+      title: "The 'Life of Christ' Mosaic",
+      subtitle: 'Millions of pieces of Venetian glass showcase the life of Christ. ',
+      location: 'Gotha, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/X2GfH30pyM-FbGeA3PoOlUpgs22O0tMYRGaE5-YiQwk/rs:fill:200:200:1/g:ce/c:4027:2684:nowe:5:5/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yOTAz/YWY4Mi02NmVkLTRh/ZjItOGZmMi02ODVl/ZThmMjNkMjdmMjIy/YmQxMGNkMjE0MWFm/ZjdfSU1HXzIzMzku/anBlZw.jpg',
+      url: '/places/the-life-of-christ-mosaic',
+      id: 56453,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '9.07'
+    },
+    {
+      title: 'Randall Knife Museum',
+      subtitle: "Home to a giant switchblade and one of the world's largest collections of pocket knives, this museum is a cut above the rest.",
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/tqgJPIaY__geRgJoNkm8nGFp2PvlhzbfdJPBrIxwUwc/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kZDVh/MWEzMC0wZWNlLTRl/NWMtODgyNi02OWRk/YmY1MjhhNTc4Mjk4/ODExYjU4NTA4MjVm/ZDFfUmFuZGFsbF9N/YWRlX0tuaXZlc19N/dXNldW1fMDAyLmpw/Zw.jpg',
+      url: '/places/randall-knife-museum',
+      id: 28314,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '9.10'
+    },
+    {
+      title: 'Lee & Rick’s Oyster Bar',
+      subtitle: 'One of the oldest restaurants in Orlando is a no-frills seafood shack still shucking fresh oysters by the bucket.',
+      location: 'Orlando, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/-FBLCS6Y5VXMmxLJaPcd3tU4JrHj0LNESyr-nGV1iwk/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xOGM5/ODI4YmI4M2Q2ZjI4/YjRfbGVlIGFuZCBy/aWNrcyBib2F0Lmpw/Zw.jpg',
+      url: '/places/lee-ricks-oyster-bar-orlando',
+      id: 57734,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '9.71'
+    },
+    {
+      title: 'Monument of States',
+      subtitle: 'After the attack on Pearl Harbor, rocks and fossils from every U.S. state were collected into a pyramid of national unity.',
+      location: 'Kissimmee, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/W6vcCxj4ku94dW1fXooFSDpAzDzq2ZS9oIEiRjUUoTg/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85ZGJi/NDUwYzFmM2JiZWRm/MWRfU3RhdGVzIDMu/anBn.jpg',
+      url: '/places/monument-of-states',
+      id: 21401,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '10.28'
+    },
+    {
+      title: 'Manor Professional Wrestling Dinner Theater',
+      subtitle: 'Would you like a sleeper hold with that?',
+      location: 'Kissimmee, Florida',
+      thumbnail_url: 'https://img.atlasobscura.com/dQTDHu4I9UBUOhae9HkEO1KxB1NDAAHDNxfes8LFGpc/rs:fill:200:200:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9sdGxv/Nzk2dmVkdGU4bHl5/YzUyMzJmMjM0Zjlj/NGUwZDIzX3Jzel8x/YmlsbF9iYXR0b25f/LV9kc2NfMDc4Mi5q/cGc.jpg',
+      url: '/places/manor-professional-wrestling-dinner-theater',
+      id: 19797,
+      hide_from_maps: 'false',
+      coordinates: [Object],
+      distance_from_query: '11.43'
+    }
+  ]
+}
+Type of searchResults: object
+Is array: false
+Found 10 Atlas Obscura locations
+Atlas location: Skeletons: Museum of Osteology, coords: 28.442597, -81.469102
+Atlas location: Lee & Rick’s Oyster Bar, coords: 28.53882, -81.456917
+Atlas location: Progress City Model, coords: 28.418242, -81.579052
+Atlas location: "Singing Runway" at the Abandoned Disney World Airport, coords: 28.398693, -81.571021
+Atlas location: Tupperware Confidence Center, coords: 28.34665, -81.402195
+Atlas location: Discovery Island, coords: 28.413731, -81.566348
+Atlas location: The Holy Land Experience, coords: 28.496172, -81.433004
+Atlas location: River Country, coords: 28.412515, -81.562731
+Atlas location: Bob Ross's Grave, coords: 28.538132, -81.509636
+Atlas location: Splendid China, coords: 28.3376, -81.605656
+Google Places returned 13 off-roading locations
+Google Places returned 19 marina locations
+Searching for lighthouses near 28.406814917708747, -81.51164292196019
+GeoApify Lighthouse URL: https://api.geoapify.com/v2/places?categories=man_made.lighthouse&filter=circle%3A-81.51164292196019%2C28.406814917708747%2C40233.5&bias=proximity%3A-81.51164292196019%2C28.406814917708747&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 4 lighthouse locations
+Found 4 lighthouse locations
+Google Places returned 13 off-roading locations
+Querying OpenStreetMap for hiking trails...
+OSM Query radius (meters): 40234
+OSM Query: [out:json][timeout:30];
+      (
+        way["highway"="footway"](around:40234,28.406814917708747,-81.51164292196019);
+        way["highway"="path"](around:40234,28.406814917708747,-81.51164292196019);
+        way["highway"="cycleway"](around:40234,28.406814917708747,-81.51164292196019);
+        way["leisure"="park"](around:40234,28.406814917708747,-81.51164292196019);
+        way["leisure"="nature_reserve"](around:40234,28.406814917708747,-81.51164292196019);
+        relation["route"="hiking"](around:40234,28.406814917708747,-81.51164292196019);
+      );
+      out center meta;
+Overpass API returned 53472 elements
+Google Places returned 11 observation deck locations
+Searching for national parks near 28.406814917708747, -81.51164292196019
+GeoApify National Park URL: https://api.geoapify.com/v2/places?categories=national_park&filter=circle%3A-81.51164292196019%2C28.406814917708747%2C40233.5&bias=proximity%3A-81.51164292196019%2C28.406814917708747&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 0 national park locations
+Searching for wind generators near 28.406814917708747, -81.51164292196019
+GeoApify Wind Generator URL: https://api.geoapify.com/v2/places?categories=power.generator.wind&filter=circle%3A-81.51164292196019%2C28.406814917708747%2C40233.5&bias=proximity%3A-81.51164292196019%2C28.406814917708747&limit=10&apiKey=6372b46c4b584485b0972aee27cf84ba
+GeoApify returned 0 wind generator locations
+Retrieved 7 locations from 10 chunk selections
+Fetched 7 adventure locations
+Creating adventure quest for: The Holy Land Experience
+Creating adventure quest for: South Beach
+Creating adventure quest for: Lake Fairview Marina
+Quest generation completed: {
+  success: true,
+  quests: [
+    {
+      id: 'quest_1753325798598_0',
+      description: 'Explore The Holy Land Experience',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: [Object],
+      trailLocation: undefined,
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325798599_1',
+      description: 'Explore South Beach',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    },
+    {
+      id: 'quest_1753325798599_2',
+      description: 'Explore Lake Fairview Marina',
+      totalTime: 120,
+      difficulty: 'medium',
+      blocks: [],
+      tags: [Array],
+      atlasLocation: undefined,
+      trailLocation: [Object],
+      chunkLocations: [Array]
+    }
+  ],
+  filteredBlocksCount: 7
+}
+Generated 3 quest options for Gemini enhancement
+Selected quest 2 of 3 for enhancement
+Using trail location: South Beach
+Quest enhanced by Gemini: quest_1753325801066_i4ampoaf3
+Stored quest quest_1753325801066_i4ampoaf3. Total quests in storage: 28
+ POST /api/enhance-quest 200 in 63749ms
+ GET /quest/quest_1753325801066_i4ampoaf3 200 in 146ms
+Looking for quest quest_1753325801066_i4ampoaf3. Total quests in storage: 28
+Found quest quest_1753325801066_i4ampoaf3
+ GET /api/quest/quest_1753325801066_i4ampoaf3 200 in 38ms
+ GET /api/directions 200 in 18ms
+Looking for quest quest_1753325801066_i4ampoaf3. Total quests in storage: 28
+Found quest quest_1753325801066_i4ampoaf3
+ GET /api/quest/quest_1753325801066_i4ampoaf3 200 in 27ms
+Calculating directions from 28.406814917708747,-81.51164292196019 to South Beach
+ GET /api/directions 200 in 22ms
+Calculating directions from 28.406814917708747,-81.51164292196019 to South Beach
+Loaded 28 active quests from disk
+ POST /api/directions 200 in 297ms
+ POST /api/directions 200 in 283ms
+ ✓ Compiled in 77ms
+[?25h

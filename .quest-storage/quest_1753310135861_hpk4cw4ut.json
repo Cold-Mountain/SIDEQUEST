@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753310135861_hpk4cw4ut",
+  "title": "A peculiar tremor ripples from the",
+  "description": "A peculiar tremor ripples from the sky-piercing summit. Ancient tales speak of a forgotten offering, a tribute to the very stones of the world, now disturbed. Your journey must take you to Mountain Peak, where the air thins and time itself feels different. There, where the earth touches the heavens, you are tasked to obtain 500 pennies. They are more than mere coins; they are fragments of a forgotten ritual, scattered by the mountain's silent guardians. Seek them out, for only then can balance be restored.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:35:35.861Z",
+  "originalBlocks": [
+    "Obtain 500 pennies"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406839618077765,
+      "longitude": -81.5116715644617,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-mountain-5106c43588a06454c0593be3f0c9d4683c40f00102f901ee188e1400000000",
+    "title": "Mountain Peak",
+    "description": "A majestic mountain peak offering breathtaking views and challenging outdoor adventures.",
+    "lat": 28.40949689990087,
+    "lng": -81.57229809999998,
+    "location": "Mountain (28.4095, -81.5723)",
+    "type": "trail"
+  }
+}

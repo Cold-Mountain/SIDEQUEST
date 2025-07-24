@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753325801066_i4ampoaf3",
+  "title": "The ancient charts hint at a",
+  "description": "The ancient charts hint at a place of untamed wildness, known only as South Beach. Your task, should you choose to accept it, is to explore South Beach. Venture into its rugged terrain, for within its hidden paths lies a secret waiting to be rediscovered by those bold enough to seek it.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:56:41.066Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406814917708747,
+      "longitude": -81.51164292196019,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJm2qR_cmU3YgRsZvWB-jaGMs",
+    "title": "South Beach",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 28.084896,
+    "lng": -81.1697463,
+    "location": "525 South Beach Drive, St Cloud",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJm2qR_cmU3YgRsZvWB-jaGMs",
+    "type": "trail"
+  }
+}

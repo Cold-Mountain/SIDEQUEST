@@ -1,0 +1,29 @@
+{
+  "id": "quest_1753326545564_vijy4k4i5",
+  "title": "The old salts speak of a",
+  "description": "The old salts speak of a place, a sentinel watching over the treacherous waves, known simply as the Historic Lighthouse. There, where the sea whispers forgotten tales against ancient stone, you are called to explore its very foundations. Seek out the truth hidden within its spiraling depths.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T03:09:05.564Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406789391508052,
+      "longitude": -81.51162909806656,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "geoapify-lighthouse-51f802cd46386254c05930f0412dbc5e3c40f00102f901028a160e00000000",
+    "title": "Historic Lighthouse",
+    "description": "A historic lighthouse standing as a beacon of maritime heritage with stunning coastal views.",
+    "lat": 28.37005885,
+    "lng": -81.53468484898248,
+    "location": "1444 Old Turtle Pond Road, Lake Buena Vista, FL 32830, United States of America",
+    "type": "trail"
+  }
+}

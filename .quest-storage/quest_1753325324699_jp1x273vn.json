@@ -1,0 +1,30 @@
+{
+  "id": "quest_1753325324699_jp1x273vn",
+  "title": "There are places where the veil",
+  "description": "There are places where the veil between worlds thins, and secrets wash ashore. Your journey leads to just such a locale: Clementine's Beach. It is imperative that you explore Clementine's Beach, for within its tranquil embrace lies something forgotten, waiting to be rediscovered by those with keen eyes.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T02:48:44.699Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406810264180308,
+      "longitude": -81.51165416961263,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-beach-ChIJQzOYNICA54gRnT9RZ-SRSVc",
+    "title": "Clementine's Beach",
+    "description": "A beautiful beach perfect for relaxation, swimming, and water activities.",
+    "lat": 28.4124283,
+    "lng": -81.5624706,
+    "location": "Bay Lake",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJQzOYNICA54gRnT9RZ-SRSVc",
+    "type": "trail"
+  }
+}

@@ -1,4 +1,5 @@
 // Google Sheets Database Types
+import { Location } from './location';
 
 export interface QuestBlock {
   Block_ID: string;
@@ -39,17 +40,40 @@ export interface UserSubmission {
   Admin_Notes: string;
 }
 
+// Unified location types for quest system
+export interface AtlasObscuraLocation {
+  title: string;
+  subtitle?: string;
+  description?: string;
+  url?: string;
+  id?: string;
+  thumbnail?: string;
+  location?: string;
+  lat?: number;
+  lng?: number;
+  distance?: number;
+}
+
+export interface TrailLocation {
+  id: string;
+  title: string;
+  description: string;
+  lat: number;
+  lng: number;
+  location: string;
+  url?: string;
+  directions?: string;
+  phone?: string;
+  type: 'trail';
+}
+
 // User input types for quest generation
 export interface QuestInput {
   timeframe: 'quick' | 'afternoon' | 'day' | 'epic'; // under hour, few hours, full day, multi-day
   difficulty: 'easy' | 'medium' | 'hard' | 'extreme';
   transportation: 'has_car' | 'no_car';
-  theme?: 'journey' | 'life_changing' | 'playbook' | 'virtuous';
-  location?: {
-    latitude: number;
-    longitude: number;
-    city: string;
-  };
+  theme?: 'adventure' | 'wildcard';
+  location?: Location;
 }
 
 // Generated quest output types
@@ -60,6 +84,24 @@ export interface GeneratedQuest {
   difficulty: 'easy' | 'medium' | 'hard' | 'extreme';
   blocks: QuestBlock[];
   tags: string[];
+  atlasLocation?: AtlasObscuraLocation; // Optional Atlas Obscura location
+  trailLocation?: TrailLocation; // Optional RIDB trail location
+  chunkLocations?: ChunkLocation[]; // Chunk-based locations from various sources
+}
+
+// Chunk location interface for locations from various APIs
+export interface ChunkLocation {
+  id: string;
+  title: string;
+  description: string;
+  lat: number;
+  lng: number;
+  location: string;
+  type: string;
+  url?: string;
+  phone?: string;
+  rating?: number;
+  hours?: string;
 }
 
 export interface QuestGenerationResponse {

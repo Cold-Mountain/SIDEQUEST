@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753307820799_wgt9ief84",
+  "title": "Travel to the Clay Island Loop",
+  "description": "Travel to the Clay Island Loop Trail, adventurer. It is there, amidst the quiet of its compacted surface, that you must attempt 30 pushups. Only through this exertion will the ancient energy of the trail awaken to guide your next step.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T21:57:00.799Z",
+  "originalBlocks": [
+    "Attempt 30 pushups"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.4,
+      "longitude": -81.5,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11006001",
+    "title": "Clay Island Loop Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features compacted surface.",
+    "lat": 28.6571975,
+    "lng": -81.69562,
+    "location": "Trail Location (28.6572, -81.6956)",
+    "type": "trail"
+  }
+}

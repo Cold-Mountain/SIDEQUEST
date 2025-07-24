@@ -1,0 +1,32 @@
+{
+  "id": "quest_1753310276958_zb0ya5ng6",
+  "title": "Listen closely. Your path has been",
+  "description": "Listen closely. Your path has been laid before you, winding deep into the unforgiving terrain of South Beach. This is not a journey for the faint of heart, but one that promises revelations for those who persevere. Amidst the dust and the roar of engines, you are tasked with a curious acquisition: find and buy a vinyl record, but heed this – its cost must not exceed five dollars. The object itself holds the key, not its melody. Do this, and the next step will be revealed.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:37:56.958Z",
+  "originalBlocks": [
+    "Buy vinyl record under $5"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.406839618077765,
+      "longitude": -81.5116715644617,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJm2qR_cmU3YgRsZvWB-jaGMs",
+    "title": "South Beach",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 28.084896,
+    "lng": -81.1697463,
+    "location": "525 South Beach Drive, St Cloud",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJm2qR_cmU3YgRsZvWB-jaGMs",
+    "type": "trail"
+  }
+}

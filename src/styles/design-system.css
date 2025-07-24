@@ -2,44 +2,47 @@
 /* Minimalistic, mystical, and warm aesthetic */
 
 :root {
-  /* Color Palette - New Brand Colors */
-  --color-primary: #89D2DC; /* Light blue */
-  --color-primary-light: #A3DCE6;
-  --color-primary-dark: #6FB8C4;
+  /* Consistent Light Theme with Purple Buttons */
+  --color-primary: #7C3AED; /* Purple - used for all buttons */
+  --color-primary-light: #8B5CF6;
+  --color-primary-dark: #6D28D9;
   
-  --color-secondary: #6564DB; /* Purple */
-  --color-secondary-light: #7F7EE3;
-  --color-secondary-dark: #504FC7;
+  --color-secondary: #0891b2; /* Cyan - complementary to purple */
+  --color-secondary-light: #22d3ee;
+  --color-secondary-dark: #0e7490;
   
-  --color-accent: #232ED1; /* Electric blue */
-  --color-accent-light: #4A52DA;
-  --color-accent-dark: #1A22A8;
+  --color-accent: #7C3AED; /* Purple accent */
+  --color-accent-light: #8B5CF6;
+  --color-accent-dark: #6D28D9;
   
-  /* Mystical Dark Accents */
-  --color-mystical: #101D42; /* Dark navy */
-  --color-mystical-light: #1A2B56;
-  --color-mystical-dark: #0A1226;
+  /* Mystical theme colors */
+  --color-mystical: #0891b2; /* Cyan for mystical elements */
+  --color-mystical-light: #22d3ee;
+  --color-mystical-dark: #0e7490;
   
-  /* Neutral Colors */
-  --color-background: #FFFFFF; /* Clean white */
+  /* Light Backgrounds Only */
+  --color-background: #FFFFFF; /* Pure white */
   --color-surface: #F8FAFB; /* Very light gray */
-  --color-surface-elevated: #FFFFFF;
+  --color-surface-elevated: #FFFFFF; /* White */
+  --color-surface-secondary: #F1F5F9; /* Light gray */
   
-  --color-text-primary: #0D1317; /* Almost black */
-  --color-text-secondary: #101D42;
-  --color-text-muted: #6B7280;
-  --color-text-disabled: #9CA3AF;
+  /* Dark Text Only */
+  --color-text-primary: #1F2937; /* Dark gray - primary text */
+  --color-text-secondary: #4B5563; /* Medium gray - secondary text */
+  --color-text-muted: #6B7280; /* Light gray - muted text */
+  --color-text-disabled: #9CA3AF; /* Very light gray - disabled */
+  --color-text-inverse: #FFFFFF; /* White text for purple buttons */
   
-  /* Border & Dividers */
-  --color-border: #E5E7EB;
-  --color-border-light: #F3F4F6;
-  --color-divider: #F9FAFB;
+  /* Border & Dividers - Light Theme */
+  --color-border: #E5E7EB; /* Light border */
+  --color-border-light: #F3F4F6; /* Very light border */
+  --color-divider: #F9FAFB; /* Subtle divider */
   
-  /* Status Colors */
-  --color-success: #4CAF50;
-  --color-warning: #FF9800;
-  --color-error: #F44336;
-  --color-info: #2196F3;
+  /* Status Colors - Light Theme */
+  --color-success: #065F46; /* Dark green */
+  --color-warning: #92400E; /* Dark amber */
+  --color-error: #991B1B; /* Dark red */
+  --color-info: #1E40AF; /* Dark blue */
   
   /* Shadows - Clean and modern */
   --shadow-sm: 0 1px 2px rgba(13, 19, 23, 0.05);
@@ -223,17 +226,17 @@ body {
 }
 
 .secondary-glow {
-  box-shadow: 0 0 20px rgba(101, 100, 219, 0.4);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.4);
 }
 
 .accent-glow {
   box-shadow: 0 0 20px rgba(35, 46, 209, 0.4);
 }
 
-/* Mystical quest button animation */
+/* Mystical quest button animation - Purple */
 .mystical-quest-ready {
   animation: mysticalPulse 2s ease-in-out infinite;
-  box-shadow: 0 0 30px rgba(76, 29, 149, 0.6), 0 0 60px rgba(76, 29, 149, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.6), 0 0 60px rgba(124, 58, 237, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -252,11 +255,11 @@ body {
 
 @keyframes mysticalPulse {
   0%, 100% {
-    box-shadow: 0 0 30px rgba(76, 29, 149, 0.6), 0 0 60px rgba(76, 29, 149, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.6), 0 0 60px rgba(124, 58, 237, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.1);
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 40px rgba(76, 29, 149, 0.8), 0 0 80px rgba(76, 29, 149, 0.6), inset 0 0 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.8), 0 0 80px rgba(124, 58, 237, 0.6), inset 0 0 30px rgba(255, 255, 255, 0.2);
     transform: scale(1.02);
   }
 }
@@ -270,13 +273,13 @@ body {
   }
 }
 
-/* Dynamic background animation */
+/* Dynamic background animation - normalized */
 .dynamic-background {
   background: linear-gradient(-45deg, 
     var(--color-background), 
-    #f0f9ff, 
     #f8fafc, 
-    var(--color-surface));
+    var(--color-surface), 
+    #f1f5f9);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
 }
@@ -340,3 +343,230 @@ body {
     transform: translateY(20px) rotate(240deg);
   }
 }
+
+/* Simple float animation for homepage */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Enhanced Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.bounce-in {
+  animation: bounceIn 0.6s ease-out forwards;
+}
+
+.blur-in {
+  animation: blurIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blurIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Hover Animations */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.04);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.5), 0 0 40px rgba(124, 58, 237, 0.3);
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Loading Animations */
+.pulse-slow {
+  animation: pulseColorSlow 3s ease-in-out infinite;
+}
+
+.pulse-fast {
+  animation: pulseColorFast 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseColorSlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulseColorFast {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Enhanced Interactive Elements */
+.interactive-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.interactive-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.interactive-card:hover::before {
+  left: 100%;
+}
+
+.interactive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Mystical Enhancement */
+.mystical-border {
+  position: relative;
+  background: linear-gradient(45deg, var(--color-surface), var(--color-surface));
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.mystical-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+  0% {
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  }
+  33% {
+    background: linear-gradient(45deg, var(--color-secondary), var(--color-accent), var(--color-primary));
+  }
+  66% {
+    background: linear-gradient(45deg, var(--color-accent), var(--color-primary), var(--color-secondary));
+  }
+  100% {
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  }
+}
+
+/* Form Enhancement */
+.enhanced-input {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.enhanced-input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(101, 100, 219, 0.1);
+}
+
+/* Staggered Animation */
+.stagger-animation > * {
+  opacity: 0;
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }

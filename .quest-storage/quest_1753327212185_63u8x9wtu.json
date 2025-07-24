@@ -1,0 +1,33 @@
+{
+  "id": "quest_1753327212185_63u8x9wtu",
+  "title": "The ancient earth breathes in whispers,",
+  "description": "The ancient earth breathes in whispers, calling to those brave enough to listen. Your journey leads you deep into Mendocino Woodlands, a place where the very ground holds forgotten truths. There, amidst the rugged terrain and winding paths, you are tasked to explore. Uncover what the shadows conceal, for only by truly exploring Mendocino Woodlands will the path forward reveal itself.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-25T03:20:12.185Z",
+  "originalBlocks": [],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 39.4436579,
+      "longitude": -123.8057607,
+      "city": "fort bragg",
+      "state": "",
+      "country": "United States",
+      "accuracy": 5000
+    }
+  },
+  "trailLocation": {
+    "id": "google-offroad-ChIJF763TmqygYARUvBKfAm-r-g",
+    "title": "Mendocino Woodlands",
+    "description": "An exciting off-road trail perfect for ATV, 4x4, and dirt bike adventures through rugged terrain.",
+    "lat": 39.3305188,
+    "lng": -123.7346517,
+    "location": "39350 Little Lake Rd, Mendocino",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJF763TmqygYARUvBKfAm-r-g",
+    "type": "trail"
+  }
+}

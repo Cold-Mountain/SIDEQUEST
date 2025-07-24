@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Button, Select } from "@/components/ui";
+import { Button, Select, SafetyDisclaimerModal, QuestConfirmationModal } from "@/components/ui";
 import { Container } from "@/components/layout";
 import { LocationInput } from "./LocationInput";
 import type { Location } from "@/types/location";
@@ -16,61 +16,44 @@ interface QuestOptions {
 
 interface QuestSelectorProps {
   onGenerateQuest: (options: QuestOptions) => void;
+  onNavigateToQuest: () => void;
   isGenerating?: boolean;
+  questReady?: boolean;
 }
 
-const timeframeOptions = [
-  { value: "quick", label: "Quick Adventure (< 1 hour)" },
-  { value: "afternoon", label: "Afternoon Quest (few hours)" },
-  { value: "day", label: "Day Journey (full day)" },
-  { value: "epic", label: "Epic Saga (multi-day)" }
-];
-
-const difficultyOptions = [
-  { value: "easy", label: "Easy" },
-  { value: "medium", label: "Medium" },
-  { value: "hard", label: "Hard" },
-  { value: "extreme", label: "Extreme" }
-];
-
-const transportationOptions = [
-  { value: "has_car", label: "Has Car" },
-  { value: "no_car", label: "No Car" }
-];
 
 const themeOptions = [
   { 
-    value: "journey", 
-    label: "Journey", 
-    description: "Travel-based adventures to explore new places and experiences" 
+    value: "adventure", 
+    label: "Adventure Mode", 
+    description: "Location-based quests featuring unique places and hidden gems" 
   },
   { 
-    value: "life_changing", 
-    label: "Life-Changing", 
-    description: "Transformative experiences that push personal boundaries" 
-  },
-  { 
-    value: "playbook", 
-    label: "The Playbook", 
-    description: "Strategic adventures for when you want to make your move" 
-  },
-  { 
-    value: "virtuous", 
-    label: "Virtuous Mode", 
-    description: "Character-building activities focused on personal growth" 
+    value: "wildcard", 
+    label: "Wild Card Mode", 
+    description: "Diverse activities and experiences for any setting" 
   }
 ];
 
-export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSelectorProps) {
+export function QuestSelector({ onGenerateQuest, onNavigateToQuest, isGenerating = false, questReady = false }: QuestSelectorProps) {
   const [isOpen, setIsOpen] = React.useState(false);
   const [questStarted, setQuestStarted] = React.useState(false);
+  const [showSafetyDisclaimer, setShowSafetyDisclaimer] = React.useState(false);
+  const [showQuestConfirmation, setShowQuestConfirmation] = React.useState(false);
   const [options, setOptions] = React.useState<QuestOptions>({
-    timeframe: "",
-    difficulty: "",
-    transportation: "",
+    timeframe: "afternoon",
+    difficulty: "medium",
+    transportation: "has_car",
     theme: "",
     location: undefined
   });
+
+  // Show safety disclaimer when quest is ready
+  React.useEffect(() => {
+    if (questReady && !showSafetyDisclaimer) {
+      setShowSafetyDisclaimer(true);
+    }
+  }, [questReady, showSafetyDisclaimer]);
 
   const handleOptionChange = (key: keyof QuestOptions, value: string | Location) => {
     setOptions(prev => ({ ...prev, [key]: value }));
@@ -80,24 +63,63 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
     setOptions(prev => ({ ...prev, location: location || undefined }));
   };
 
-  const handleGenerateQuest = async () => {
+  const handleInitiateQuest = () => {
     if (isComplete) {
-      setQuestStarted(true);
-      setIsOpen(false);
-      await onGenerateQuest(options);
+      setShowQuestConfirmation(true);
     }
   };
 
-  const isComplete = options.timeframe && options.difficulty && options.transportation && options.theme && options.location;
+  const handleSafetyAccepted = () => {
+    setShowSafetyDisclaimer(false);
+    // Quest generation already completed, navigate to quest
+    onNavigateToQuest();
+  };
+
+  const handleSafetyDeclined = () => {
+    setShowSafetyDisclaimer(false);
+    // Reset quest generation state
+    setQuestStarted(false);
+  };
+
+  const handleQuestConfirmed = async () => {
+    setShowQuestConfirmation(false);
+    setQuestStarted(true);
+    setIsOpen(false);
+    
+    // Generate quest - safety disclaimer will show automatically when ready
+    await onGenerateQuest(options);
+  };
+
+  const handleQuestCancelled = () => {
+    setShowQuestConfirmation(false);
+  };
+
+  const isComplete = options.theme && options.location;
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 dynamic-background relative">
-      <div className="floating-elements"></div>
+    <div className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-[var(--color-secondary)] to-[var(--color-secondary-dark)] relative">
+      {/* Floating elements for teal background - deterministic positioning */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-white/10 animate-float"
+            style={{
+              left: `${10 + (i * 12) % 80}%`,
+              top: `${15 + (i * 17) % 70}%`,
+              width: `${40 + (i % 3) * 15}px`,
+              height: `${40 + (i % 3) * 15}px`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${5 + (i % 3)}s`
+            }}
+          />
+        ))}
+      </div>
       <Container size="sm">
         <div className="text-center space-y-8">
           <div className="space-y-8">
-            <h1 className="text-display text-5xl lg:text-6xl font-bold text-[var(--color-text-primary)]" style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>
-              Find Your <span className="text-[var(--color-secondary)]">Quest</span>
+            <h1 className="text-display text-5xl lg:text-6xl font-bold text-white" style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>
+              Find Your <span className="text-cyan-400 font-bold">Quest</span>
             </h1>
           </div>
 
@@ -106,14 +128,14 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
               <Button 
                 variant="secondary" 
                 size="xl"
-                onClick={() => isComplete && !questStarted && !isGenerating ? handleGenerateQuest() : undefined}
+                onClick={() => isComplete && !questStarted && !isGenerating ? handleInitiateQuest() : undefined}
                 disabled={!isComplete || questStarted || isGenerating}
-                className={`${isComplete && !questStarted && !isGenerating ? 'mystical-quest-ready' : 'secondary-glow'} transition-all duration-500`}
+                className={`${isComplete && !questStarted && !isGenerating ? 'mystical-quest-ready' : ''} transition-all duration-500 font-bold`}
                 style={{ 
-                  background: questStarted || isGenerating ? '#666' : '#4C1D95',
+                  padding: '16px 32px',
+                  backgroundColor: questStarted || isGenerating ? '#9CA3AF' : '#0891b2',
                   color: 'white',
-                  fontWeight: '700',
-                  padding: '16px 32px'
+                  backgroundImage: 'none'
                 }}
               >
                 {isGenerating ? 'Generating Quest...' : questStarted ? 'Quest Generated!' : 'Generate Quest'}
@@ -124,13 +146,7 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
                   variant="outline"
                   size="default"
                   onClick={() => setIsOpen(!isOpen)}
-                  className="w-12 h-12 p-0 rounded-full"
-                  style={{ 
-                    background: 'white',
-                    color: '#4C1D95',
-                    borderColor: '#4C1D95',
-                    fontWeight: '700'
-                  }}
+                  className="w-12 h-12 p-0 rounded-full bg-[var(--color-surface-elevated)] text-[var(--color-primary)] border-[var(--color-primary)] font-bold hover:bg-[var(--color-primary)]/5"
                 >
                   ▼
                 </Button>
@@ -138,65 +154,11 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
             </div>
 
             {isOpen && !questStarted && !isGenerating && (
-              <div className="bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg p-6 space-y-6 max-w-md mx-auto">
+              <div className="bg-black/80 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 space-y-6 max-w-md mx-auto shadow-2xl" style={{ boxShadow: '0 0 20px rgba(34, 211, 238, 0.3), inset 0 0 20px rgba(0,0,0,0.5)' }}>
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-medium text-[var(--color-text-primary)] mb-2">
-                      Timeframe
-                    </label>
-                    <Select
-                      variant="mystical"
-                      value={options.timeframe}
-                      onChange={(e) => handleOptionChange("timeframe", e.target.value)}
-                    >
-                      <option value="">Select timeframe...</option>
-                      {timeframeOptions.map(option => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </Select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--color-text-primary)] mb-2">
-                      Difficulty
-                    </label>
-                    <Select
-                      variant="mystical"
-                      value={options.difficulty}
-                      onChange={(e) => handleOptionChange("difficulty", e.target.value)}
-                    >
-                      <option value="">Select difficulty...</option>
-                      {difficultyOptions.map(option => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </Select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--color-text-primary)] mb-2">
-                      Transportation
-                    </label>
-                    <Select
-                      variant="mystical"
-                      value={options.transportation}
-                      onChange={(e) => handleOptionChange("transportation", e.target.value)}
-                    >
-                      <option value="">Select transportation...</option>
-                      {transportationOptions.map(option => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </Select>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--color-text-primary)] mb-2">
-                      Theme
+                    <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
+                      Quest Mode
                     </label>
                     <div className="relative">
                       <Select
@@ -204,7 +166,7 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
                         value={options.theme}
                         onChange={(e) => handleOptionChange("theme", e.target.value)}
                       >
-                        <option value="">Select theme...</option>
+                        <option value="">Select quest mode...</option>
                         {themeOptions.map(option => (
                           <option key={option.value} value={option.value} title={option.description}>
                             {option.label}
@@ -218,7 +180,7 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
                       {themeOptions.map(option => (
                         <div
                           key={option.value}
-                          className={`text-xs text-[var(--color-text-muted)] transition-opacity duration-200 ${
+                          className={`text-xs text-cyan-200 drop-shadow-sm transition-opacity duration-200 ${
                             options.theme === option.value ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'
                           }`}
                         >
@@ -227,15 +189,14 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
                       ))}
                     </div>
                   </div>
-                </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-[var(--color-text-primary)] mb-2">
-                    Location
-                  </label>
-                  <LocationInput onLocationChange={handleLocationChange} />
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2 drop-shadow-md">
+                      Location
+                    </label>
+                    <LocationInput onLocationChange={handleLocationChange} />
+                  </div>
                 </div>
-
               </div>
             )}
 
@@ -243,6 +204,20 @@ export function QuestSelector({ onGenerateQuest, isGenerating = false }: QuestSe
 
         </div>
       </Container>
+
+      {/* Safety Disclaimer Modal */}
+      <SafetyDisclaimerModal
+        isOpen={showSafetyDisclaimer}
+        onAccept={handleSafetyAccepted}
+        onDecline={handleSafetyDeclined}
+      />
+
+      {/* Quest Confirmation Modal */}
+      <QuestConfirmationModal
+        isOpen={showQuestConfirmation}
+        onConfirm={handleQuestConfirmed}
+        onCancel={handleQuestCancelled}
+      />
     </div>
   );
 }

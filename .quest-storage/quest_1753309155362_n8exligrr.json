@@ -1,0 +1,35 @@
+{
+  "id": "quest_1753309155362_n8exligrr",
+  "title": "A curious energy calls from the",
+  "description": "A curious energy calls from the Van Nuys Airport Observation Area, where the world's movements unfold beneath a watchful eye. Your task is to obtain 500 pennies from this unique vantage point. The reason is shrouded in the silent roar of the engines; merely gather what is needed, and do not question the whispers of fate.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:19:15.363Z",
+  "originalBlocks": [
+    "Obtain 500 pennies"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "wildcard",
+    "location": {
+      "latitude": 34.0536909,
+      "longitude": -118.242766,
+      "city": "Los Angeles",
+      "state": "",
+      "country": "United States",
+      "accuracy": 5000
+    }
+  },
+  "trailLocation": {
+    "id": "google-observation-ChIJ1Uf2wgCawoARh0-sbLLuukY",
+    "title": "Van Nuys Airport Observation Area",
+    "description": "An elevated observation deck offering panoramic views and perfect photo opportunities.",
+    "lat": 34.214501,
+    "lng": -118.4883941,
+    "location": "Waterman Dr, Van Nuys",
+    "url": "https://www.google.com/maps/place/?q=place_id:ChIJ1Uf2wgCawoARh0-sbLLuukY",
+    "type": "trail"
+  }
+}

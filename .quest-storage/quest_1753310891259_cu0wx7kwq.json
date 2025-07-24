@@ -1,0 +1,31 @@
+{
+  "id": "quest_1753310891259_cu0wx7kwq",
+  "title": "A faint ripple in the ether",
+  "description": "A faint ripple in the ether leads to the Clay Island Loop Trail, where the air itself holds secrets. Your task is deceptively simple: at the heart of this compacted path, you must throw a paper airplane. Let its silent flight be a declaration, a whispered message to forces unseen.",
+  "difficulty": "medium",
+  "timeframe": "afternoon",
+  "expiresAt": "2025-07-24T22:48:11.259Z",
+  "originalBlocks": [
+    "Throw a paper airplane"
+  ],
+  "userInputs": {
+    "timeframe": "afternoon",
+    "difficulty": "medium",
+    "transportation": "has_car",
+    "theme": "adventure",
+    "location": {
+      "latitude": 28.40682057957665,
+      "longitude": -81.51166163928724,
+      "accuracy": 35
+    }
+  },
+  "trailLocation": {
+    "id": "osm-way-11006001",
+    "title": "Clay Island Loop Trail",
+    "description": "A walking trail offering outdoor recreation opportunities. Features compacted surface.",
+    "lat": 28.6571975,
+    "lng": -81.69562,
+    "location": "Trail Location (28.6572, -81.6956)",
+    "type": "trail"
+  }
+}

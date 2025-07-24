@@ -243,12 +243,17 @@ export function LocationInput({ onLocationChange, className }: LocationInputProp
           </div>
         )}
 
-        {/* Location Source Info */}
+        {/* Location Source Info & Quest Finding Help */}
         {location && (
-          <p className="text-xs text-[var(--color-text-muted)] text-center">
-            Location detected via {location.accuracy && location.accuracy < 1000 ? 'GPS' : 'IP address'}
-            {location.accuracy && ` (±${Math.round(location.accuracy)}m accuracy)`}
-          </p>
+          <div className="text-center space-y-1">
+            <p className="text-xs text-[var(--color-text-muted)]">
+              Location detected via {location.accuracy && location.accuracy < 1000 ? 'GPS' : 'IP address'}
+              {location.accuracy && ` (±${Math.round(location.accuracy)}m accuracy)`}
+            </p>
+            <p className="text-xs text-[var(--color-secondary)] font-medium">
+              💡 Precise location greatly improves quest finding and travel directions
+            </p>
+          </div>
         )}
       </div>
     </div>
