@@ -6,20 +6,36 @@ import type { Location, LocationResult, LocationPermission, IPLocationResponse }
  */
 export async function getLocationByIP(): Promise<LocationResult> {
   try {
-    const response = await fetch('https://ipinfo.io/json?token=your_token_here');
+    // Try multiple free IP geolocation services in order
+    const services = [
+      'https://ipinfo.io/json',
+      'https://ipapi.co/json/',
+      'https://ip-api.com/json/'
+    ];
     
-    if (!response.ok) {
-      // Fallback to free service without token
-      const fallbackResponse = await fetch('https://ipinfo.io/json');
-      if (!fallbackResponse.ok) {
-        throw new Error('Failed to fetch location data');
+    for (const serviceUrl of services) {
+      try {
+        const response = await fetch(serviceUrl);
+        
+        if (response.ok) {
+          const data = await response.json();
+          
+          // Different services have different response formats
+          if (serviceUrl.includes('ipinfo.io')) {
+            return parseIPLocationResponse(data);
+          } else if (serviceUrl.includes('ipapi.co')) {
+            return parseIPApiCoResponse(data);
+          } else if (serviceUrl.includes('ip-api.com')) {
+            return parseIPApiResponse(data);
+          }
+        }
+      } catch (serviceError) {
+        // Continue to next service if this one fails
+        console.warn(`Failed to fetch from ${serviceUrl}:`, serviceError);
       }
-      const data: IPLocationResponse = await fallbackResponse.json();
-      return parseIPLocationResponse(data);
     }
     
-    const data: IPLocationResponse = await response.json();
-    return parseIPLocationResponse(data);
+    throw new Error('All IP geolocation services failed');
   } catch (error) {
     return {
       location: null,
@@ -44,6 +60,66 @@ function parseIPLocationResponse(data: IPLocationResponse): LocationResult {
       country: data.country,
       zip: data.postal,
       accuracy: 50000 // IP-based location is approximate (50km accuracy)
+    };
+    
+    return {
+      location,
+      source: 'ip'
+    };
+  } catch (error) {
+    return {
+      location: null,
+      error: 'Failed to parse location data',
+      source: 'ip'
+    };
+  }
+}
+
+/**
+ * Parse ipapi.co response
+ */
+function parseIPApiCoResponse(data: any): LocationResult {
+  try {
+    const location: Location = {
+      latitude: data.latitude,
+      longitude: data.longitude,
+      city: data.city,
+      state: data.region,
+      country: data.country_name,
+      zip: data.postal,
+      accuracy: 50000
+    };
+    
+    return {
+      location,
+      source: 'ip'
+    };
+  } catch (error) {
+    return {
+      location: null,
+      error: 'Failed to parse location data',
+      source: 'ip'
+    };
+  }
+}
+
+/**
+ * Parse ip-api.com response
+ */
+function parseIPApiResponse(data: any): LocationResult {
+  try {
+    if (data.status === 'fail') {
+      throw new Error(data.message || 'API request failed');
+    }
+    
+    const location: Location = {
+      latitude: data.lat,
+      longitude: data.lon,
+      city: data.city,
+      state: data.regionName,
+      country: data.country,
+      zip: data.zip,
+      accuracy: 50000
     };
     
     return {
