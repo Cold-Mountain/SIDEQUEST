@@ -7,26 +7,11 @@ Sidequest is an adventure-generating app that crafts meaningful, real-world ques
 
 ## 🧭 User Input Phase
 
-Users select from the following options:
+Users select a mode
 
-### ⏱️ Timeframe
-- **Quick Adventure** – under an hour  
-- **Afternoon Quest** – a few hours  
-- **Day Journey** – full-day commitment  
-- **Epic Saga** – multi-day adventure  
-
-### ⚔️ Difficulty
-- Easy  
-- Medium  
-- Hard  
-
-### 🚗 Transportation
-- **Has car** – access to personal vehicle  
-- **No car** – walking/public transportation only  
-
-### 🎭 Theme/Mode (optional)
-- **Journey** – focus on travel/exploration  
-- **Life-changing** – long-term impact quests  
+### 🎭 Modes 
+- **Adventure** – focus on travel/exploration (available)
+- **Wild Card** – wild card quests that give random pois (available)
 - **The Playbook** – romance-oriented  
 - **Virtuous** – volunteering and helping others  
 
@@ -36,7 +21,7 @@ Users select from the following options:
 
 Quests are built using:
 - A database of **quest blocks** ("seeds")  
-- User inputs (time, difficulty, transport, theme)  
+- User inputs (mode)  
 - **Location data** (via IP, user input, or Google Maps API)  
 - **External APIs** for real-time data:
   - Atlas Obscura (unique sites)  
@@ -47,6 +32,40 @@ Quests are built using:
   - Amtrak / Megabus / Greyhound APIs  
   - RSS feeds from local travel blogs  
 - **AI Integration** (Claude, Gemini, etc.) to create coherent quest narratives
+
+New in Version 0.1.0: Chunks!
+
+Chunks are specialized subsets of quests powered by dedicated APIs or algorithms tailored to specific outdoor or exploratory themes.
+
+Each Chunk corresponds to a unique type of activity and pulls from its own data sources to generate relevant and exciting quests. These are integrated directly into the quest generation pipeline, offering deeper variety, realism, and regional nuance.
+
+🌍 Initial Chunks:
+BaseChunk.ts
+BeachChunk.ts
+ChunkManager.ts
+CoolnessCalculator.ts
+GoogleBeachChunk.ts
+GoogleCatCafeChunk.ts
+GoogleHikingAreaChunk.ts
+GoogleJapaneseInnChunk.ts
+GoogleMarinaChunk.ts
+GoogleObservationDeckChunk.ts
+GoogleOffRoadingChunk.ts
+GooglePsychicChunk.ts
+HikingChunk.ts
+LighthouseChunk.ts
+MountainChunk.ts
+NationalParkChunk.ts
+ObscuraChunk.ts
+PierChunk.ts
+SkateboardParkChunk.ts
+WindGeneratorChunk.ts
+
+May be condition-dependent, activating only in specific seasons, weather, or regions
+
+(e.g., canoeing quests won’t appear during winter or in arid regions)
+
+This modular chunk system enables richer customization and more meaningful adventures tailored to both user input and environmental context.
 
 ---
 
